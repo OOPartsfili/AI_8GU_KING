@@ -12,7 +12,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RESOURCES = ROOT / 'ios/AI8GUKing/Resources'
+RESOURCES = ROOT / 'ios/AI8GUKing/OfflineContent'
 
 
 class ReaderParser(HTMLParser):

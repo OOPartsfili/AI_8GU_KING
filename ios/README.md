@@ -26,7 +26,7 @@ Windows 无法运行 Xcode。仓库的 **Actions → Build offline iPhone app** 
 
 - 根目录 `开始阅读.html` 是生成输入，Markdown 正文仍是唯一编辑源。
 - `tools/prepare_assets.py` 注入手机版布局、原生导入导出桥和禁止网络依赖的 CSP；保留每道题完整数据。
-- `AI8GUKing/Resources` 必须作为 folder reference 保持目录结构。
+- `AI8GUKing/OfflineContent` 必须作为 folder reference 保持目录结构。不要命名为 `Resources`：该名称会影响 iOS 的 bundle 结构识别。
 - `OfflineAssetInstaller.swift` 检查内置资源并复制到稳定位置；只有资源版本变化才更新内容文件。
 - `OfflineWebView.swift` 在加载 HTML 之前安装网络拦截规则；外部网址仅在用户点击时交给系统浏览器。
 - 页面只在需要时解析题目和渲染正文，沿用桌面性能优化。

@@ -13,13 +13,13 @@ let playwright;
 try { playwright = require('playwright'); }
 catch { playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright')); }
 const root = path.resolve(__dirname, '../..');
-const reader = path.join(root, 'ios/AI8GUKing/Resources/reader.html');
+const reader = path.join(root, 'ios/AI8GUKing/OfflineContent/reader.html');
 const output = process.env.IOS_QA_OUTPUT || path.join(root, 'work/ios/qa');
 const engine = process.env.BROWSER_ENGINE || 'chromium';
 const url = pathToFileURL(reader).href;
 const widths = [{width:393, height:852}, {width:852, height:393}];
 fs.mkdirSync(output, {recursive:true});
-assert(fs.existsSync(reader), 'Generate ios/AI8GUKing/Resources/reader.html before running web QA.');
+assert(fs.existsSync(reader), 'Generate ios/AI8GUKing/OfflineContent/reader.html before running web QA.');
 
 async function checkOverflow(page, name) {
   const overflow = await page.evaluate(() => ({width:innerWidth, scroll:document.documentElement.scrollWidth}));

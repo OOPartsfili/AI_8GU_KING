@@ -28,7 +28,8 @@ def generate():
         reference=add('file:'+file.name,'PBXFileReference',lastKnownFileType='sourcecode.swift',path=file.name,sourceTree='<group>')
         app_files.append(reference);app_sources.append(add('build:'+file.name,'PBXBuildFile',fileRef=reference))
     info=add('file:Info','PBXFileReference',lastKnownFileType='text.plist.xml',path='Info.plist',sourceTree='<group>')
-    resources=add('file:Resources','PBXFileReference',lastKnownFileType='folder',path='Resources',sourceTree='<group>')
+    # "Resources" is reserved by CFBundle layout detection; use an app-specific folder.
+    resources=add('file:Resources','PBXFileReference',lastKnownFileType='folder',path='OfflineContent',sourceTree='<group>')
     assets=add('file:Assets','PBXFileReference',lastKnownFileType='folder.assetcatalog',path='Assets.xcassets',sourceTree='<group>')
     resource_builds=[add('build:Resources','PBXBuildFile',fileRef=resources),add('build:Assets','PBXBuildFile',fileRef=assets)]
     app_group=add('group:app','PBXGroup',children=app_files+[info,resources,assets],path='AI8GUKing',sourceTree='<group>')

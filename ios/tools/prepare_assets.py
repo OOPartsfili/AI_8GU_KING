@@ -19,7 +19,7 @@ def prepare():
     content = source.replace('<head>', '<head>\n<meta http-equiv="Content-Security-Policy" content="' + policy + '">', 1)
     content = content.replace('</head>', '<style id="ios-mobile-style">\n' + css + '\n</style>\n</head>')
     content = content.replace('</body>', '<script id="ios-mobile-bridge">\n' + script + '\n</script>\n</body>')
-    resources = IOS / 'AI8GUKing/Resources'
+    resources = IOS / 'AI8GUKing/OfflineContent'
     resources.mkdir(parents=True, exist_ok=True)
     (resources / 'reader.html').write_bytes(content.encode('utf-8'))
     report = dict(content_version=metadata['version'], questions=len(metadata['questions']),

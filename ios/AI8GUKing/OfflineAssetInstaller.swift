@@ -13,7 +13,7 @@ enum OfflineAssetInstaller {
     }
 
     static func install() throws -> InstalledReader {
-        guard let source = Bundle.main.resourceURL?.appendingPathComponent("Resources", isDirectory: true),
+        guard let source = Bundle.main.resourceURL?.appendingPathComponent("OfflineContent", isDirectory: true),
               FileManager.default.fileExists(atPath: source.appendingPathComponent("reader.html").path) else {
             throw ReaderFailure("安装包中缺少离线题库，请重新安装完整版本。")
         }

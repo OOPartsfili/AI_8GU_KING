@@ -64,7 +64,7 @@
 		"C8AA0765840735F294B5C5FC" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "folder";
-			"path" = "Resources";
+			"path" = "OfflineContent";
 			"sourceTree" = "<group>";
 		};
 		"3A94BB07224E6FBA2B7113D3" = {

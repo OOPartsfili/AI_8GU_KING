@@ -14,8 +14,9 @@ def package(app, output):
     binary=app/info['CFBundleExecutable']
     architecture=subprocess.check_output(['lipo','-archs',str(binary)],text=True).strip()
     assert 'arm64' in architecture.split(), architecture
-    manifest=json.loads((app/'Resources/content-manifest.json').read_text())
-    reader=(app/'Resources/reader.html').read_bytes()
+    assert not (app/'Resources').exists(), 'Reserved Resources directory can break iOS bundle detection'
+    manifest=json.loads((app/'OfflineContent/content-manifest.json').read_text())
+    reader=(app/'OfflineContent/reader.html').read_bytes()
     assert hashlib.sha256(reader).hexdigest()==manifest['reader_sha256']
     output.mkdir(parents=True,exist_ok=True)
     ipa=output/'AI8GUKing-1.5.0-unsigned.ipa'
