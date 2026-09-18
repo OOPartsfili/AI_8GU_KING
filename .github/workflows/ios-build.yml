@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: macos-15
-    timeout-minutes: 25
+    timeout-minutes: 30
     env:
       DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
     steps:
@@ -40,20 +40,69 @@ jobs:
             -derivedDataPath build/device CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
             build | tee build/logs/device-build.log
           python3 ios/tools/package_ipa.py --app build/device/Build/Products/Release-iphoneos/AI8GUKing.app --output build/package
-      - name: Verify app in iPhone 16 simulator
+      - name: Build iPhone 16 simulator tests
+        id: simulator_build
+        timeout-minutes: 6
+        # Apple workaround for Xcode 16.4 / iOS 18.5 simulator missing libswiftWebKit:
+        # https://developer.apple.com/forums/thread/785964
+        # The physical iPhone package above retains its iOS 17 deployment target.
         run: |
           set -o pipefail
           xcodebuild -project ios/AI8GUKing.xcodeproj -scheme AI8GUKing \
             -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
-            -derivedDataPath build/simulator -resultBundlePath build/iPhone16-tests.xcresult \
-            -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO \
-            test | tee build/logs/simulator-tests.log
+            -derivedDataPath build/simulator CODE_SIGNING_ALLOWED=NO IPHONEOS_DEPLOYMENT_TARGET=18.4 \
+            build-for-testing 2>&1 | tee build/logs/simulator-build.log
+      - name: Boot iPhone 16 and launch the real app
+        id: simulator_launch
+        timeout-minutes: 5
+        run: |
+          set -o pipefail
+          mkdir -p build/evidence
+          SIMULATOR_UDID=$(xcrun simctl create 'AI8GUKing-CI' com.apple.CoreSimulator.SimDeviceType.iPhone-16 com.apple.CoreSimulator.SimRuntime.iOS-18-5)
+          echo "SIMULATOR_UDID=$SIMULATOR_UDID" >> "$GITHUB_ENV"
+          xcrun simctl boot "$SIMULATOR_UDID"
+          xcrun simctl bootstatus "$SIMULATOR_UDID" -b 2>&1 | tee build/logs/simulator-boot.log
+          xcrun simctl status_bar "$SIMULATOR_UDID" override --time '9:41' --batteryState charged --batteryLevel 100
+          xcrun simctl install "$SIMULATOR_UDID" build/simulator/Build/Products/Debug-iphonesimulator/AI8GUKing.app
+          xcrun simctl launch "$SIMULATOR_UDID" com.oopartsfili.ai8guking 2>&1 | tee build/logs/simulator-launch.log
+          sleep 5
+          xcrun simctl io "$SIMULATOR_UDID" screenshot build/evidence/iPhone16-launch.png
+          xcrun simctl terminate "$SIMULATOR_UDID" com.oopartsfili.ai8guking
+      - name: Verify native offline reading and progress
+        timeout-minutes: 6
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/AI8GUKing.xcodeproj -scheme AI8GUKing \
+            -configuration Debug -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+            -derivedDataPath build/simulator -resultBundlePath build/native-tests.xcresult \
+            -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO IPHONEOS_DEPLOYMENT_TARGET=18.4 \
+            -test-timeouts-enabled YES -default-test-execution-time-allowance 120 \
+            -maximum-test-execution-time-allowance 180 -only-testing:AI8GUKingTests \
+            test-without-building 2>&1 | tee build/logs/native-tests.log
+      - name: Verify phone navigation and native menus
+        if: ${{ !cancelled() && steps.simulator_build.outcome == 'success' && steps.simulator_launch.outcome == 'success' }}
+        timeout-minutes: 6
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/AI8GUKing.xcodeproj -scheme AI8GUKing \
+            -configuration Debug -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+            -derivedDataPath build/simulator -resultBundlePath build/ui-tests.xcresult \
+            -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO IPHONEOS_DEPLOYMENT_TARGET=18.4 \
+            -test-timeouts-enabled YES -default-test-execution-time-allowance 120 \
+            -maximum-test-execution-time-allowance 180 -only-testing:AI8GUKingUITests \
+            test-without-building 2>&1 | tee build/logs/ui-tests.log
       - name: Collect screenshots and installation instructions
         if: always()
         run: |
           mkdir -p build/evidence
-          if [ -d build/iPhone16-tests.xcresult ]; then
-            xcrun xcresulttool export attachments --path build/iPhone16-tests.xcresult --output-path build/evidence || true
+          for RESULT in build/*-tests.xcresult; do
+            if [ -d "$RESULT" ]; then
+              xcrun xcresulttool export attachments --path "$RESULT" --output-path "build/evidence/$(basename "$RESULT")" || true
+            fi
+          done
+          if [ -n "$SIMULATOR_UDID" ]; then
+            xcrun simctl io "$SIMULATOR_UDID" screenshot build/evidence/iPhone16-final.png || true
+            xcrun simctl spawn "$SIMULATOR_UDID" log show --last 10m --style compact --predicate 'process == "AI8GUKing"' > build/logs/app-runtime.log 2>&1 || true
           fi
           if [ -d build/package ]; then
             cp ios/安装到iPhone.md build/package/
@@ -74,5 +123,5 @@ jobs:
           path: |
             build/logs/
             build/evidence/
-            build/iPhone16-tests.xcresult/
+            build/*-tests.xcresult/
           retention-days: 14
