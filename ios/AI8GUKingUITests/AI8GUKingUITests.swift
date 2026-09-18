@@ -29,7 +29,16 @@ final class AI8GUKingUITests: XCTestCase {
         XCTAssertTrue(app.buttons["全部题目"].waitForExistence(timeout: 20))
         app.buttons["全部题目"].tap()
         XCTAssertTrue(app.staticTexts["341 道题 · 点击题目展开"].waitForExistence(timeout: 15))
+        app.buttons["Agent"].tap()
         XCUIDevice.shared.orientation = .landscapeLeft
+        let rotated = NSPredicate { _, _ in app.frame.width > app.frame.height }
+        expectation(for: rotated, evaluatedWith: nil)
+        waitForExpectations(timeout: 10)
+        // A frame-size change precedes the rotation compositor finishing its animation.
+        // Wait for that short transition before keeping a visual regression attachment.
+        Thread.sleep(forTimeInterval: 1)
+        app.webViews.firstMatch.swipeUp()
+        XCTAssertTrue(app.buttons["更多"].exists)
         let landscape = XCTAttachment(screenshot: app.screenshot())
         landscape.name = "iPhone16-landscape"
         landscape.lifetime = .keepAlways
