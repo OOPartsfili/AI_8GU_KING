@@ -1,0 +1,39 @@
+{
+  "tested_questions": 341,
+  "core_questions": 48,
+  "sources": 135,
+  "version": "1.5",
+  "beginner_questions": 20,
+  "beginner_order": true,
+  "distillation_route_34": true,
+  "opd_route_10": true,
+  "posttraining_route_8": true,
+  "pretraining_route_20": true,
+  "three_digit_source_links": true,
+  "agent_course_50": true,
+  "agent_start_12": true,
+  "agent_walkthrough_3_scenarios": true,
+  "new_guide_and_glossary": true,
+  "reading_depth_switch_persistence_and_manual_toggle": true,
+  "search_count": 10,
+  "progress_save_reload_export_import": true,
+  "math_render": true,
+  "lazy_records_and_question_bodies": true,
+  "lazy_deep_content": true,
+  "keyboard_expansion": true,
+  "batch_expand_collapse_and_navigation_cancellation": true,
+  "print_deferred_content": true,
+  "desktop_overflow": [],
+  "mobile_overflow": false,
+  "broken_refs": [],
+  "javascript_errors": [],
+  "automatic_http_requests": [],
+  "viewport_desktop": [
+    1440,
+    1080
+  ],
+  "viewport_mobile": [
+    390,
+    844
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+  "checked_at": "2026-09-15T07:58:04.730947+00:00",
+  "additional_checked_at": "2026-09-15T14:46:41.440564+00:00",
+  "scope": "S01-S103 retain previous checks. S104-S127 reviewed for 1.4: 23 native reachability checks succeeded; S124 official page read via web tool after native timeout. Method review is separate.",
+  "results": [
+    {
+      "id": "S01",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1706.03762",
+      "title": "Attention Is All You Need",
+      "bytes_read": 43644,
+      "error": null
+    },
+    {
+      "id": "S02",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2104.09864",
+      "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+      "bytes_read": 43899,
+      "error": null
+    },
+    {
+      "id": "S03",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2305.13245",
+      "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+      "bytes_read": 41223,
+      "error": null
+    },
+    {
+      "id": "S04",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2205.14135",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "bytes_read": 43989,
+      "error": null
+    },
+    {
+      "id": "S05",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2203.15556",
+      "title": "Training Compute-Optimal Large Language Models",
+      "bytes_read": 44600,
+      "error": null
+    },
+    {
+      "id": "S06",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2106.09685",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "bytes_read": 44248,
+      "error": null
+    },
+    {
+      "id": "S07",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2305.14314",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "bytes_read": 44173,
+      "error": null
+    },
+    {
+      "id": "S08",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2305.18290",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "bytes_read": 44613,
+      "error": null
+    },
+    {
+      "id": "S09",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2405.14734v3",
+      "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "bytes_read": 612983,
+      "error": null
+    },
+    {
+      "id": "S10",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2402.01306",
+      "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
+      "bytes_read": 43015,
+      "error": null
+    },
+    {
+      "id": "S11",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1707.06347",
+      "title": "Proximal Policy Optimization Algorithms",
+      "bytes_read": 42489,
+      "error": null
+    },
+    {
+      "id": "S12",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2402.03300",
+      "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "bytes_read": 42465,
+      "error": null
+    },
+    {
+      "id": "S13",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2501.12948",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "bytes_read": 75710,
+      "error": null
+    },
+    {
+      "id": "S14",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2503.14476",
+      "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+      "bytes_read": 46806,
+      "error": null
+    },
+    {
+      "id": "S15",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2503.20783",
+      "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+      "bytes_read": 43129,
+      "error": null
+    },
+    {
+      "id": "S16",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://huggingface.co/docs/trl/v0.24.0/grpo_trainer",
+      "title": "GRPO Trainer · Hugging Face",
+      "bytes_read": 527016,
+      "error": null
+    },
+    {
+      "id": "S17",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2408.03314",
+      "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "bytes_read": 44439,
+      "error": null
+    },
+    {
+      "id": "S18",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2601.18734",
+      "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+      "bytes_read": 43947,
+      "error": null
+    },
+    {
+      "id": "S19",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2603.07079",
+      "title": "Entropy-Aware On-Policy Distillation of Language Models",
+      "bytes_read": 43612,
+      "error": null
+    },
+    {
+      "id": "S20",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2402.04249",
+      "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+      "bytes_read": 43704,
+      "error": null
+    },
+    {
+      "id": "S21",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2402.10260",
+      "title": "A StrongREJECT for Empty Jailbreaks",
+      "bytes_read": 45222,
+      "error": null
+    },
+    {
+      "id": "S22",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2308.01263",
+      "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+      "bytes_read": 42427,
+      "error": null
+    },
+    {
+      "id": "S23",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2406.18495",
+      "title": "WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs",
+      "bytes_read": 44669,
+      "error": null
+    },
+    {
+      "id": "S24",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2502.11090",
+      "title": "SafeDialBench: A Fine-Grained Safety Evaluation Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks",
+      "bytes_read": 44844,
+      "error": null
+    },
+    {
+      "id": "S25",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2005.11401",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "bytes_read": 45835,
+      "error": null
+    },
+    {
+      "id": "S26",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2004.04906",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "bytes_read": 41975,
+      "error": null
+    },
+    {
+      "id": "S27",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2310.11511",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "bytes_read": 42906,
+      "error": null
+    },
+    {
+      "id": "S28",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2401.18059",
+      "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "bytes_read": 41160,
+      "error": null
+    },
+    {
+      "id": "S29",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2408.08067",
+      "title": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "bytes_read": 43555,
+      "error": null
+    },
+    {
+      "id": "S30",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2210.03629",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "bytes_read": 44231,
+      "error": null
+    },
+    {
+      "id": "S31",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2406.12045",
+      "title": "$\\tau$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "bytes_read": 40700,
+      "error": null
+    },
+    {
+      "id": "S32",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2406.13352",
+      "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "bytes_read": 43005,
+      "error": null
+    },
+    {
+      "id": "S33",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2507.05257",
+      "title": "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions",
+      "bytes_read": 43597,
+      "error": null
+    },
+    {
+      "id": "S34",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2309.06180",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "bytes_read": 43425,
+      "error": null
+    },
+    {
+      "id": "S35",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1910.02054",
+      "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+      "bytes_read": 44751,
+      "error": null
+    },
+    {
+      "id": "S36",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2211.17192",
+      "title": "Fast Inference from Transformers via Speculative Decoding",
+      "bytes_read": 41908,
+      "error": null
+    },
+    {
+      "id": "S37",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2307.08691",
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "bytes_read": 43026,
+      "error": null
+    },
+    {
+      "id": "S38",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2306.00978",
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+      "bytes_read": 44966,
+      "error": null
+    },
+    {
+      "id": "S39",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2210.17323",
+      "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+      "bytes_read": 44603,
+      "error": null
+    },
+    {
+      "id": "S40",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2103.00020",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "bytes_read": 44839,
+      "error": null
+    },
+    {
+      "id": "S41",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2304.08485",
+      "title": "Visual Instruction Tuning",
+      "bytes_read": 41766,
+      "error": null
+    },
+    {
+      "id": "S42",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2501.04003",
+      "title": "Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives",
+      "bytes_read": 43991,
+      "error": null
+    },
+    {
+      "id": "S43",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2406.15349",
+      "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+      "bytes_read": 45141,
+      "error": null
+    },
+    {
+      "id": "S44",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2406.03877",
+      "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous Driving",
+      "bytes_read": 44509,
+      "error": null
+    },
+    {
+      "id": "S45",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2411.15139",
+      "title": "DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving",
+      "bytes_read": 44214,
+      "error": null
+    },
+    {
+      "id": "S46",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2509.17940",
+      "title": "DriveDPO: Policy Learning via Safety DPO For End-to-End Autonomous Driving",
+      "bytes_read": 41719,
+      "error": null
+    },
+    {
+      "id": "S47",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2006.11239",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "bytes_read": 41757,
+      "error": null
+    },
+    {
+      "id": "S48",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "bytes_read": 73356,
+      "error": null
+    },
+    {
+      "id": "S49",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2502.09992",
+      "title": "Large Language Diffusion Models",
+      "bytes_read": 42244,
+      "error": null
+    },
+    {
+      "id": "S50",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "title": "Automatic Prefix Caching - vLLM",
+      "bytes_read": 655768,
+      "error": null
+    },
+    {
+      "id": "S51",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://huggingface.co/docs/trl/v0.24.0/dpo_trainer",
+      "title": "DPO Trainer · Hugging Face",
+      "bytes_read": 356503,
+      "error": null
+    },
+    {
+      "id": "S52",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2410.12784",
+      "title": "JudgeBench: A Benchmark for Evaluating LLM-based Judges",
+      "bytes_read": 43206,
+      "error": null
+    },
+    {
+      "id": "S53",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2107.03374",
+      "title": "Evaluating Large Language Models Trained on Code",
+      "bytes_read": 51693,
+      "error": null
+    },
+    {
+      "id": "S54",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1706.04599",
+      "title": "On Calibration of Modern Neural Networks",
+      "bytes_read": 42115,
+      "error": null
+    },
+    {
+      "id": "S55",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1711.05101",
+      "title": "Decoupled Weight Decay Regularization",
+      "bytes_read": 43412,
+      "error": null
+    },
+    {
+      "id": "S56",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1910.07467",
+      "title": "Root Mean Square Layer Normalization",
+      "bytes_read": 42837,
+      "error": null
+    },
+    {
+      "id": "S57",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2002.05202",
+      "title": "GLU Variants Improve Transformer",
+      "bytes_read": 40173,
+      "error": null
+    },
+    {
+      "id": "S58",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1808.06226",
+      "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+      "bytes_read": 41055,
+      "error": null
+    },
+    {
+      "id": "S59",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1810.04805",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "bytes_read": 42090,
+      "error": null
+    },
+    {
+      "id": "S60",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2101.03961",
+      "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+      "bytes_read": 43814,
+      "error": null
+    },
+    {
+      "id": "S61",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1506.02438",
+      "title": "High-Dimensional Continuous Control Using Generalized Advantage Estimation",
+      "bytes_read": 45252,
+      "error": null
+    },
+    {
+      "id": "S62",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2203.11171",
+      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+      "bytes_read": 42282,
+      "error": null
+    },
+    {
+      "id": "S63",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2505.24864",
+      "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models",
+      "bytes_read": 43390,
+      "error": null
+    },
+    {
+      "id": "S64",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2504.13837",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+      "bytes_read": 45086,
+      "error": null
+    },
+    {
+      "id": "S65",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2509.10396",
+      "title": "Inpainting-Guided Policy Optimization for Diffusion Large Language Models",
+      "bytes_read": 44159,
+      "error": null
+    },
+    {
+      "id": "S66",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2605.24220",
+      "title": "Polar: Agentic RL on Any Harness at Scale",
+      "bytes_read": 43037,
+      "error": null
+    },
+    {
+      "id": "S67",
+      "ok": true,
+      "kind": "text/html; charset=UTF-8",
+      "resolved_url": "https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html",
+      "title": "Introduction to Information Retrieval",
+      "bytes_read": 33215,
+      "error": null
+    },
+    {
+      "id": "S68",
+      "ok": true,
+      "kind": "application/pdf",
+      "resolved_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+      "title": "PDF file",
+      "bytes_read": 66196,
+      "error": null
+    },
+    {
+      "id": "S69",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1908.10084",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "bytes_read": 41707,
+      "error": null
+    },
+    {
+      "id": "S70",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2212.10496",
+      "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+      "bytes_read": 41814,
+      "error": null
+    },
+    {
+      "id": "S71",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2404.16130",
+      "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "bytes_read": 43707,
+      "error": null
+    },
+    {
+      "id": "S72",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "title": "3.4. Metrics and scoring: quantifying the quality of predictions — scikit-learn 1.9.1 documentation",
+      "bytes_read": 438145,
+      "error": null
+    },
+    {
+      "id": "S73",
+      "ok": true,
+      "kind": "application/pdf",
+      "resolved_url": "https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf",
+      "title": "PDF file",
+      "bytes_read": 426460,
+      "error": null
+    },
+    {
+      "id": "S74",
+      "ok": true,
+      "kind": "application/pdf",
+      "resolved_url": "https://see.stanford.edu/materials/aimlcs229/cs229-notes8.pdf",
+      "title": "PDF file",
+      "bytes_read": 83133,
+      "error": null
+    },
+    {
+      "id": "S75",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2312.07920",
+      "title": "DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes",
+      "bytes_read": 41141,
+      "error": null
+    },
+    {
+      "id": "S76",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1310.4546",
+      "title": "Distributed Representations of Words and Phrases and their Compositionality",
+      "bytes_read": 42263,
+      "error": null
+    },
+    {
+      "id": "S77",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2301.04104",
+      "title": "Mastering Diverse Domains through World Models",
+      "bytes_read": 41612,
+      "error": null
+    },
+    {
+      "id": "S78",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1603.09320",
+      "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
+      "bytes_read": 43673,
+      "error": null
+    },
+    {
+      "id": "S79",
+      "ok": true,
+      "kind": "application/pdf",
+      "resolved_url": "https://www.cs.toronto.edu/~hinton/absps/distillation.pdf",
+      "title": "PDF file",
+      "bytes_read": 99277,
+      "error": null
+    },
+    {
+      "id": "S80",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1606.07947v4",
+      "title": "Sequence-Level Knowledge Distillation",
+      "bytes_read": 42030,
+      "error": null
+    },
+    {
+      "id": "S81",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2306.08543",
+      "title": "MiniLLM: On-Policy Distillation of Large Language Models",
+      "bytes_read": 42620,
+      "error": null
+    },
+    {
+      "id": "S82",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2306.13649",
+      "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+      "bytes_read": 43311,
+      "error": null
+    },
+    {
+      "id": "S83",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/1011.0686",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "bytes_read": 43043,
+      "error": null
+    },
+    {
+      "id": "S84",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2305.02301v2",
+      "title": "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+      "bytes_read": 43784,
+      "error": null
+    },
+    {
+      "id": "S85",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2310.12823",
+      "title": "AgentTuning: Enabling Generalized Agent Abilities for LLMs",
+      "bytes_read": 43504,
+      "error": null
+    },
+    {
+      "id": "S86",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2407.03502",
+      "title": "AgentInstruct: Toward Generative Teaching with Agentic Flows",
+      "bytes_read": 44458,
+      "error": null
+    },
+    {
+      "id": "S87",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2505.17612v1",
+      "title": "Distilling LLM Agent into Small Modelswith Retrieval and Code Tools",
+      "bytes_read": 544755,
+      "error": null
+    },
+    {
+      "id": "S88",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://huggingface.co/docs/trl/v0.24.0/gkd_trainer",
+      "title": "Generalized Knowledge Distillation Trainer · Hugging Face",
+      "bytes_read": 223220,
+      "error": null
+    },
+    {
+      "id": "S89",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2605.07725v1",
+      "title": "SOD: Step-wise On-policy Distillation for Small Language Model Agents",
+      "bytes_read": 708427,
+      "error": null
+    },
+    {
+      "id": "S90",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2607.14777v1",
+      "title": "Seed: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+      "bytes_read": 561469,
+      "error": null
+    },
+    {
+      "id": "S91",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+      "title": "On-Policy Distillation - Thinking Machines Lab",
+      "bytes_read": 105662,
+      "error": null
+    },
+    {
+      "id": "S92",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2606.30406v1",
+      "title": "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training",
+      "bytes_read": 231032,
+      "error": null
+    },
+    {
+      "id": "S93",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2601.02780",
+      "title": "MiMo-V2-Flash Technical Report",
+      "bytes_read": 62237,
+      "error": null
+    },
+    {
+      "id": "S94",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2601.20802v1",
+      "title": "Reinforcement Learning via Self-Distillation",
+      "bytes_read": 1001958,
+      "error": null
+    },
+    {
+      "id": "S95",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2608.06296v2",
+      "title": "On-Policy Self-Distillation without Any Supervision",
+      "bytes_read": 44041,
+      "error": null
+    },
+    {
+      "id": "S96",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2507.18071",
+      "title": "Group Sequence Policy Optimization",
+      "bytes_read": 41702,
+      "error": null
+    },
+    {
+      "id": "S97",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2511.20347v2",
+      "title": "Soft Adaptive Policy Optimization",
+      "bytes_read": 207255,
+      "error": null
+    },
+    {
+      "id": "S98",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2601.05242v1",
+      "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+      "bytes_read": 337520,
+      "error": null
+    },
+    {
+      "id": "S99",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2602.10693v3",
+      "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+      "bytes_read": 43087,
+      "error": null
+    },
+    {
+      "id": "S100",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2512.13961",
+      "title": "Olmo 3",
+      "bytes_read": 49747,
+      "error": null
+    },
+    {
+      "id": "S101",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2506.20920",
+      "title": "FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language",
+      "bytes_read": 43131,
+      "error": null
+    },
+    {
+      "id": "S102",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2305.10429v4",
+      "title": "DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining",
+      "bytes_read": 42555,
+      "error": null
+    },
+    {
+      "id": "S103",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2207.14255",
+      "title": "Efficient Training of Language Models to Fill in the Middle",
+      "bytes_read": 41461,
+      "error": null
+    },
+    {
+      "id": "S104",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "title": "Building Effective AI Agents \\ Anthropic",
+      "bytes_read": 212431,
+      "error": null
+    },
+    {
+      "id": "S105",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "title": "Writing effective tools for AI agents—using AI agents \\ Anthropic",
+      "bytes_read": 234414,
+      "error": null
+    },
+    {
+      "id": "S106",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "title": "Introducing advanced tool use on the Claude Developer Platform \\ Anthropic",
+      "bytes_read": 275901,
+      "error": null
+    },
+    {
+      "id": "S107",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "title": "The 2026-07-28 Specification | Model Context Protocol Blog",
+      "bytes_read": 133679,
+      "error": null
+    },
+    {
+      "id": "S108",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://a2a-protocol.org/v1.0.0/specification/",
+      "title": "Overview - A2A Protocol",
+      "bytes_read": 599272,
+      "error": null
+    },
+    {
+      "id": "S109",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2608.06370v1",
+      "title": "The Bitter Lesson of Tool Calling",
+      "bytes_read": 198926,
+      "error": null
+    },
+    {
+      "id": "S110",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/abs/2512.08296",
+      "title": "Towards a Science of Scaling Agent Systems",
+      "bytes_read": 45377,
+      "error": null
+    },
+    {
+      "id": "S111",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "title": "Computer use tool - Claude Platform Docs",
+      "bytes_read": 1489391,
+      "error": null
+    },
+    {
+      "id": "S112",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "title": "Effective context engineering for AI agents \\ Anthropic",
+      "bytes_read": 201827,
+      "error": null
+    },
+    {
+      "id": "S113",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "title": "Harness design for long-running application development \\ Anthropic",
+      "bytes_read": 274623,
+      "error": null
+    },
+    {
+      "id": "S114",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "title": "Equipping agents for the real world with Agent Skills \\ Anthropic",
+      "bytes_read": 176234,
+      "error": null
+    },
+    {
+      "id": "S115",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "title": "How we built our multi-agent research system \\ Anthropic",
+      "bytes_read": 205983,
+      "error": null
+    },
+    {
+      "id": "S116",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2410.10813v2",
+      "title": "LongMemEval: Benchmarking Chat Assist-ants on Long-Term Interactive Memory",
+      "bytes_read": 405796,
+      "error": null
+    },
+    {
+      "id": "S117",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2602.02474v2",
+      "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+      "bytes_read": 508317,
+      "error": null
+    },
+    {
+      "id": "S118",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2606.04536v1",
+      "title": "Scaling Self-Evolving Agents via Parametric Memory",
+      "bytes_read": 431143,
+      "error": null
+    },
+    {
+      "id": "S119",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2608.12428v1",
+      "title": "MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents",
+      "bytes_read": 350967,
+      "error": null
+    },
+    {
+      "id": "S120",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2608.17528v1",
+      "title": "1The overall framework of Agent Lightning v1.0.",
+      "bytes_read": 244566,
+      "error": null
+    },
+    {
+      "id": "S121",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2506.11425v1",
+      "title": "Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards",
+      "bytes_read": 212783,
+      "error": null
+    },
+    {
+      "id": "S122",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2504.21798v1",
+      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+      "bytes_read": 561672,
+      "error": null
+    },
+    {
+      "id": "S123",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2506.07982v1",
+      "title": "𝜏^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+      "bytes_read": 1733111,
+      "error": null
+    },
+    {
+      "id": "S124",
+      "ok": false,
+      "error": "The read operation timed out",
+      "web_tool_verified": true,
+      "web_verification_checked_at": "2026-09-15T14:54:44.521406+00:00",
+      "web_verification_url": "https://www.tbench.ai/news/terminal-bench-4-0",
+      "web_verification_title": "Terminal-Bench 4.0",
+      "web_verification_note": "Official full page read successfully with web tool after native read timeout. Covers resource calibration, task fixes/removals and rerun requirements. Native error preserved."
+    },
+    {
+      "id": "S125",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "title": "Demystifying evals for AI agents \\ Anthropic",
+      "bytes_read": 304951,
+      "error": null
+    },
+    {
+      "id": "S126",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://github.com/sierra-research/tau2-bench",
+      "title": "GitHub - sierra-research/tau2-bench: τ-Bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · GitHub",
+      "bytes_read": 406706,
+      "error": null
+    },
+    {
+      "id": "S127",
+      "ok": true,
+      "kind": "text/html; charset=utf-8",
+      "resolved_url": "https://arxiv.org/html/2609.08149v1",
+      "title": "SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+      "bytes_read": 526205,
+      "error": null
+    },
+    {
+      "id": "S128",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.functional.scaled_dot_product_attention.html",
+      "title": "PyTorch 2.14 scaled_dot_product_attention",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S129",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.MultiheadAttention.html",
+      "title": "PyTorch 2.14 MultiheadAttention",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S130",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.CrossEntropyLoss.html",
+      "title": "PyTorch 2.14 CrossEntropyLoss",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S131",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.LayerNorm.html",
+      "title": "PyTorch 2.14 LayerNorm",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S132",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://github.com/datawhalechina/happy-llm",
+      "title": "Happy-LLM — 从零开始构建大模型",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S133",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://github.com/datawhalechina/hello-agents",
+      "title": "Hello-Agents — 从零开始构建智能体",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S134",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://github.com/rasbt/LLMs-from-scratch",
+      "title": "Build a Large Language Model (From Scratch) — official code",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    },
+    {
+      "id": "S135",
+      "ok": true,
+      "method": "web tool open/find",
+      "resolved_url": "https://github.com/Meko1/llm-interview-guide",
+      "title": "LLMGuide — 大模型面试指南",
+      "checked_on": "2026-09-16",
+      "scope": "Official source page read; not a native HTTP reachability measurement or independent reproduction."
+    }
+  ],
+  "transformer_sources_scope": "S128-S135: 8 official source pages opened/read via web tool on 2026-09-16; prior checks retain their stated methods."
+}

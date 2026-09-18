@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "S01",
+    "title": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "scope": "Transformer 原始结构与注意力",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S02",
+    "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+    "url": "https://arxiv.org/abs/2104.09864",
+    "scope": "RoPE 旋转及相对位置",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S03",
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "url": "https://arxiv.org/abs/2305.13245",
+    "scope": "query/KV 头分组",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S04",
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "url": "https://arxiv.org/abs/2205.14135",
+    "scope": "分块、在线 softmax 与 IO",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S05",
+    "title": "Training Compute-Optimal Large Language Models",
+    "url": "https://arxiv.org/abs/2203.15556",
+    "scope": "训练预算分配；比例不作普适常数",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S06",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "url": "https://arxiv.org/abs/2106.09685",
+    "scope": "低秩更新、参数量、初始化",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S07",
+    "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+    "url": "https://arxiv.org/abs/2305.14314",
+    "scope": "低比特冻结基座与适配器",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S08",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "url": "https://arxiv.org/abs/2305.18290",
+    "scope": "DPO 目标、隐式奖励和推导",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S09",
+    "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "url": "https://arxiv.org/html/2405.14734v3",
+    "scope": "已核对正文公式 4–6；平均 logprob、β、γ",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S10",
+    "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
+    "url": "https://arxiv.org/abs/2402.01306",
+    "scope": "非成对二值反馈；标题随版本变化",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S11",
+    "title": "Proximal Policy Optimization Algorithms",
+    "url": "https://arxiv.org/abs/1707.06347",
+    "scope": "PPO clipped surrogate",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S12",
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "url": "https://arxiv.org/abs/2402.03300",
+    "scope": "原始 GRPO 与组相对优势",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S13",
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2501.12948",
+    "scope": "R1/R1-Zero 多阶段路线；不混同所有版本",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S14",
+    "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "url": "https://arxiv.org/abs/2503.14476",
+    "scope": "token 聚合及配套训练技术",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S15",
+    "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+    "url": "https://arxiv.org/abs/2503.20783",
+    "scope": "长度/难度偏置与 Dr. GRPO",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S16",
+    "title": "TRL GRPO Trainer v0.24.0",
+    "url": "https://huggingface.co/docs/trl/v0.24.0/grpo_trainer",
+    "scope": "固定文档版本；不声称为最新版本",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S17",
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "url": "https://arxiv.org/abs/2408.03314",
+    "scope": "难度自适应推理计算与验证器",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S18",
+    "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+    "url": "https://arxiv.org/abs/2601.18734",
+    "scope": "OPSD / Self-Distilled Reasoner：参考解特权上下文、学生轨迹、自教师；F03、KD27、KD28",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026 年预印本 v3 方法与散度消融；该版本后续实验采用正向 KL，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S19",
+    "title": "Entropy-Aware On-Policy Distillation of Language Models",
+    "url": "https://arxiv.org/abs/2603.07079",
+    "scope": "EOPD：保留反向 KL 的 OPD 目标，在教师高熵位置额外加入正向 KL；F04、KD32",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026 年预印本 v3 方法第 4 节与消融；高熵项为相加而非替换，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S20",
+    "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+    "url": "https://arxiv.org/abs/2402.04249",
+    "scope": "标准化红队与稳健拒答",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S21",
+    "title": "A StrongREJECT for Empty Jailbreaks",
+    "url": "https://arxiv.org/abs/2402.10260",
+    "scope": "以实际有害帮助评价；纠正报告中的简称式标题",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S22",
+    "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+    "url": "https://arxiv.org/abs/2308.01263",
+    "scope": "正常敏感邻域与过度拒答",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S23",
+    "title": "WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs",
+    "url": "https://arxiv.org/abs/2406.18495",
+    "scope": "输入风险、回复风险、拒答检测",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S24",
+    "title": "SafeDialBench: A Fine-Grained Safety Evaluation Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks",
+    "url": "https://arxiv.org/abs/2502.11090",
+    "scope": "多轮双语安全；不同投稿版本实验配置不同",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收",
+    "previous_title": "SafeDialBench: A Fine-Grained Safety Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks"
+  },
+  {
+    "id": "S25",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "url": "https://arxiv.org/abs/2005.11401",
+    "scope": "参数记忆和外部检索结合",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S26",
+    "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "url": "https://arxiv.org/abs/2004.04906",
+    "scope": "双编码与对比检索",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S27",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "url": "https://arxiv.org/abs/2310.11511",
+    "scope": "学习式检索和反思 token",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S28",
+    "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "url": "https://arxiv.org/abs/2401.18059",
+    "scope": "递归聚类摘要",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S29",
+    "title": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "url": "https://arxiv.org/abs/2408.08067",
+    "scope": "claim 层级归因",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S30",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "scope": "推理、动作与观察交替",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S31",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "scope": "终态校验与 pass^k；不要写成 pass@k",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S32",
+    "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "url": "https://arxiv.org/abs/2406.13352",
+    "scope": "工具型 Agent 提示注入评测",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S33",
+    "title": "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions",
+    "url": "https://arxiv.org/abs/2507.05257",
+    "scope": "MemoryAgentBench；早期 workshop 版本名与维度不同",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S34",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "url": "https://arxiv.org/abs/2309.06180",
+    "scope": "KV 分页和共享",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S35",
+    "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+    "url": "https://arxiv.org/abs/1910.02054",
+    "scope": "优化器/梯度/参数分片",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S36",
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "url": "https://arxiv.org/abs/2211.17192",
+    "scope": "草稿接受与残差采样",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S37",
+    "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+    "url": "https://arxiv.org/abs/2307.08691",
+    "scope": "拓展阅读：并行与工作划分",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S38",
+    "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+    "url": "https://arxiv.org/abs/2306.00978",
+    "scope": "激活感知权重量化",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S39",
+    "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+    "url": "https://arxiv.org/abs/2210.17323",
+    "scope": "近似二阶权重量化补偿",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S40",
+    "title": "Learning Transferable Visual Models From Natural Language Supervision",
+    "url": "https://arxiv.org/abs/2103.00020",
+    "scope": "CLIP 图文对比",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S41",
+    "title": "Visual Instruction Tuning",
+    "url": "https://arxiv.org/abs/2304.08485",
+    "scope": "LLaVA 图文连接与指令训练",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S42",
+    "title": "Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives",
+    "url": "https://arxiv.org/abs/2501.04003",
+    "scope": "DriveBench 视觉可靠性",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S43",
+    "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+    "url": "https://arxiv.org/abs/2406.15349",
+    "scope": "非反应式评价边界",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S44",
+    "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous Driving",
+    "url": "https://arxiv.org/abs/2406.03877",
+    "scope": "交互场景闭环多能力评测",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S45",
+    "title": "DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving",
+    "url": "https://arxiv.org/abs/2411.15139",
+    "scope": "锚点与截断去噪；不把步数减小等同端到端速度",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S46",
+    "title": "DriveDPO: Policy Learning via Safety DPO For End-to-End Autonomous Driving",
+    "url": "https://arxiv.org/abs/2509.17940",
+    "scope": "轨迹级偏好；按原始标题登记",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S47",
+    "title": "Denoising Diffusion Probabilistic Models",
+    "url": "https://arxiv.org/abs/2006.11239",
+    "scope": "扩散基础；不直接外推离散语言目标",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S48",
+    "title": "DeepSeek-V3 Technical Report",
+    "url": "https://arxiv.org/abs/2412.19437",
+    "scope": "MLA 与 MoE 工程；技术报告",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S49",
+    "title": "Large Language Diffusion Models",
+    "url": "https://arxiv.org/abs/2502.09992",
+    "scope": "LLaDA 离散扩散语言建模",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S50",
+    "title": "vLLM Automatic Prefix Caching",
+    "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+    "scope": "动态官方文档；核查日有效，不锁定 API",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S51",
+    "title": "TRL DPO Trainer v0.24.0",
+    "url": "https://huggingface.co/docs/trl/v0.24.0/dpo_trainer",
+    "scope": "参考 logprob 预计算与训练实现",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S52",
+    "title": "JudgeBench: A Benchmark for Evaluating LLM-based Judges",
+    "url": "https://arxiv.org/abs/2410.12784",
+    "scope": "评审器本身能力评测",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S53",
+    "title": "Evaluating Large Language Models Trained on Code",
+    "url": "https://arxiv.org/abs/2107.03374",
+    "scope": "HumanEval 与 pass@k 无偏估计",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S54",
+    "title": "On Calibration of Modern Neural Networks",
+    "url": "https://arxiv.org/abs/1706.04599",
+    "scope": "概率校准与温度缩放",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S55",
+    "title": "Decoupled Weight Decay Regularization",
+    "url": "https://arxiv.org/abs/1711.05101",
+    "scope": "AdamW 与权重衰减",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S56",
+    "title": "Root Mean Square Layer Normalization",
+    "url": "https://arxiv.org/abs/1910.07467",
+    "scope": "RMSNorm",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S57",
+    "title": "GLU Variants Improve Transformer",
+    "url": "https://arxiv.org/abs/2002.05202",
+    "scope": "门控 FFN 与 SwiGLU",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S58",
+    "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+    "url": "https://arxiv.org/abs/1808.06226",
+    "scope": "子词分词工程；不同算法不混同",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S59",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "scope": "双向编码与 mask 目标",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S60",
+    "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+    "url": "https://arxiv.org/abs/2101.03961",
+    "scope": "专家路由与稀疏计算",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S61",
+    "title": "High-Dimensional Continuous Control Using Generalized Advantage Estimation",
+    "url": "https://arxiv.org/abs/1506.02438",
+    "scope": "GAE",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S62",
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "url": "https://arxiv.org/abs/2203.11171",
+    "scope": "多次推理答案聚合",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S63",
+    "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models",
+    "url": "https://arxiv.org/abs/2505.24864",
+    "scope": "长程 RL 的经验研究；不作普遍能力定理",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S64",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+    "url": "https://arxiv.org/abs/2504.13837",
+    "scope": "有限预算下的能力覆盖研究",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S65",
+    "title": "Inpainting-Guided Policy Optimization for Diffusion Large Language Models",
+    "url": "https://arxiv.org/abs/2509.10396",
+    "scope": "利用局部已知解引导扩散探索",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S66",
+    "title": "Polar: Agentic RL on Any Harness at Scale",
+    "url": "https://arxiv.org/abs/2605.24220",
+    "scope": "2026-05 预印本观察；轨迹重建与异步接口",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S67",
+    "title": "Introduction to Information Retrieval",
+    "url": "https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html",
+    "scope": "作者教材；TF-IDF、BM25、排序指标",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S68",
+    "title": "Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods",
+    "url": "https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf",
+    "scope": "作者原论文 RRF",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S69",
+    "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    "url": "https://arxiv.org/abs/1908.10084",
+    "scope": "双编码表征与交叉编码代价",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S70",
+    "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+    "url": "https://arxiv.org/abs/2212.10496",
+    "scope": "HyDE 的假设文档检索",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S71",
+    "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+    "url": "https://arxiv.org/abs/2404.16130",
+    "scope": "图式全局摘要与检索",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S72",
+    "title": "scikit-learn Model evaluation: quantifying the quality of predictions",
+    "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+    "scope": "官方实现定义；AP、F1、概率指标",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S73",
+    "title": "Planning and Acting in Partially Observable Stochastic Domains",
+    "url": "https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf",
+    "scope": "作者原论文 POMDP",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S74",
+    "title": "CS229 Lecture Notes: The EM Algorithm",
+    "url": "https://see.stanford.edu/materials/aimlcs229/cs229-notes8.pdf",
+    "scope": "官方课程推导；EM 条件与下界",
+    "checked_on": "2026-09-15",
+    "status": "已核对 Stanford 公开讲义 EM 推导；原失效地址已替换",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S75",
+    "title": "DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes",
+    "url": "https://arxiv.org/abs/2312.07920",
+    "scope": "驾驶动态场景重建",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S76",
+    "title": "Distributed Representations of Words and Phrases and their Compositionality",
+    "url": "https://arxiv.org/abs/1310.4546",
+    "scope": "Skip-gram 与负采样",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S77",
+    "title": "Mastering Diverse Domains through World Models",
+    "url": "https://arxiv.org/abs/2301.04104",
+    "scope": "动作条件世界模型与想象学习；非驾驶实车结论",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S78",
+    "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
+    "url": "https://arxiv.org/abs/1603.09320",
+    "scope": "HNSW；ANN 索引召回与语义检索召回分开",
+    "checked_on": "2026-09-15",
+    "status": "已打开一手页面并登记；不表示全文复现或会议接收核查",
+    "venue_policy": "不由 arXiv 自动推断正式接收"
+  },
+  {
+    "id": "S79",
+    "title": "Distilling the Knowledge in a Neural Network",
+    "url": "https://www.cs.toronto.edu/~hinton/absps/distillation.pdf",
+    "scope": "经典软标签、温度与 T² 梯度尺度；KD01/KD03",
+    "checked_on": "2026-09-15",
+    "status": "已阅读作者公开论文对应定义与高温梯度段落",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S80",
+    "title": "Sequence-Level Knowledge Distillation",
+    "url": "https://arxiv.org/abs/1606.07947v4",
+    "scope": "序列级教师输出监督；KD05",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者摘要；原任务为机器翻译，业务教学示例另行注明",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S81",
+    "title": "MiniLLM: On-Policy Distillation of Large Language Models",
+    "url": "https://arxiv.org/abs/2306.08543",
+    "scope": "序列反向 KL 与学生采样优化；KD09",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者论文与 ICLR 论文页的方法概述；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S82",
+    "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+    "url": "https://arxiv.org/abs/2306.13649",
+    "scope": "GKD：学生生成上下文、教师反馈与可选散度；KD07/KD10",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者摘要、官方研究页与配套文档；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S83",
+    "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+    "url": "https://arxiv.org/abs/1011.0686",
+    "scope": "DAgger 与学习者所到状态的专家标注；KD08",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者论文摘要与方法思想；Agent 例子为教学迁移",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S84",
+    "title": "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+    "url": "https://arxiv.org/abs/2305.02301v2",
+    "scope": "理由与标签的多任务监督；KD06",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者摘要与公开方法说明；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S85",
+    "title": "AgentTuning: Enabling Generalized Agent Abilities for LLMs",
+    "url": "https://arxiv.org/abs/2310.12823",
+    "scope": "Agent 交互示范、筛选、混合训练及同名数据集区分；KD12",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者摘要和 THUDM 官方项目；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S86",
+    "title": "AgentInstruct: Toward Generative Teaching with Agentic Flows",
+    "url": "https://arxiv.org/abs/2407.03502",
+    "scope": "用 agentic flows 组织合成教学数据；区分 AgentTuning 数据集；KD12",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者摘要；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S87",
+    "title": "Distilling LLM Agent into Small Models with Retrieval and Code Tools",
+    "url": "https://arxiv.org/html/2505.17612v1",
+    "scope": "工具使用轨迹迁移，分开训练构造与测试时动作选择收益；KD13",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者 v1 全文相关段落与官方项目；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S88",
+    "title": "TRL v0.24.0 — Generalized Knowledge Distillation Trainer",
+    "url": "https://huggingface.co/docs/trl/v0.24.0/gkd_trainer",
+    "scope": "固定版本 lmbda、beta、seq_kd 与温度用途；KD10",
+    "checked_on": "2026-09-15",
+    "status": "已核对官方版本文档；不声明为最新版本或已运行 GPU 配方",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S89",
+    "title": "SOD: Step-wise On-policy Distillation for Small Language Model Agents",
+    "url": "https://arxiv.org/html/2605.07725v1",
+    "scope": "工具步骤分歧、蒸馏权重与恢复；KD14",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-05 预印本 v1 方法与消融段落；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S90",
+    "title": "Seed: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+    "url": "https://arxiv.org/html/2607.14777v1",
+    "scope": "轨迹复盘技能、双上下文概率反馈与 RL；KD15",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-07 预印本 v1 方法；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S91",
+    "title": "On-Policy Distillation",
+    "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+    "scope": "学生轨迹上的教师反馈、逐 token 对数概率差与当前 token 更新；KD25、KD26、HP06",
+    "checked_on": "2026-09-15",
+    "status": "已核对 Thinking Machines 2025-10-27 原文及方法；与全轨迹回报梯度区分，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S92",
+    "title": "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training",
+    "url": "https://arxiv.org/html/2606.30406v1",
+    "scope": "共同 SFT 起点、分领域 RL 教师、路由与多教师 OPD；KD29、KD30",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-06 预印本 v1 方法，包括采样梯度与 top-k 目标；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S93",
+    "title": "MiMo-V2-Flash Technical Report",
+    "url": "https://arxiv.org/abs/2601.02780",
+    "scope": "多教师 OPD 能力整合、MTP 训练与推测解码的具体技术报告案例；KD29、PT15",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-01 作者报告相关说明；不把报告成绩当作本资料实测，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S94",
+    "title": "Reinforcement Learning via Self-Distillation",
+    "url": "https://arxiv.org/html/2601.20802v1",
+    "scope": "SDPO：环境详细反馈、成功尝试与自教师重新评价学生路径；KD31、HP07",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-01 预印本 v1 方法及教师构造；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S95",
+    "title": "On-Policy Self-Distillation without Any Supervision",
+    "url": "https://arxiv.org/abs/2608.06296v2",
+    "scope": "U-OPSD：自一致伪答案、额外上下文与分歧回答蒸馏；KD33",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-08-09 预印本 v2 摘要与流程；不将数学任务结果外推为 Agent 结论，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S96",
+    "title": "Group Sequence Policy Optimization",
+    "url": "https://arxiv.org/abs/2507.18071",
+    "scope": "GSPO：长度归一化序列概率比、序列级剪切；HP02",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025 年作者论文方法与公式；本轮 HTML 页面于 2026-09-15 读取，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S97",
+    "title": "Soft Adaptive Policy Optimization",
+    "url": "https://arxiv.org/html/2511.20347v2",
+    "scope": "SAPO：平滑概率比门控、正负优势温度；HP03",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025-12-01 预印本 v2 方法公式；与其他同缩写方法区分，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S98",
+    "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+    "url": "https://arxiv.org/html/2601.05242v1",
+    "scope": "逐奖励组内归一化、合并优势与批次归一化；HP04",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-01 预印本 v1 方法；与扩散模型同缩写算法区分，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S99",
+    "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+    "url": "https://arxiv.org/abs/2602.10693v3",
+    "scope": "异步与采样偏移、序列权重重塑的机制概览；HP05、HP06",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-05-08 预印本 v3 摘要与问题设定；未给出完整算法实现，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S100",
+    "title": "Olmo 3",
+    "url": "https://arxiv.org/abs/2512.13961",
+    "scope": "开放训练生命周期、midtraining、长上下文阶段与评测；PT01、PT14、PT16、PT19 等",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者报告与中间训练、长上下文相关段落；工程清单为教学归纳，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S101",
+    "title": "FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language",
+    "url": "https://arxiv.org/abs/2506.20920",
+    "scope": "多语言预训练数据处理、过滤与分布评估；PT05、PT17",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025 年作者论文摘要及流程概览；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S102",
+    "title": "DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining",
+    "url": "https://arxiv.org/abs/2305.10429v4",
+    "scope": "参考模型、代理模型、相对损失与领域重加权；PT07",
+    "checked_on": "2026-09-15",
+    "status": "已核对 v4 方法：以相对参考的超额损失学习数据配比；未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S103",
+    "title": "Efficient Training of Language Models to Fill in the Middle",
+    "url": "https://arxiv.org/abs/2207.14255",
+    "scope": "FIM 数据重排与自回归训练目标；PT03",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者论文摘要与数据变换说明；示例为教学构造，未复现",
+    "venue_policy": "不由 arXiv 或背景报告自动推断正式接收"
+  },
+  {
+    "id": "S104",
+    "title": "Building effective agents",
+    "url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "scope": "Agent系统、工作流、自主程度、反馈与停止；AG01、AG02、AG08、AG12",
+    "checked_on": "2026-09-15",
+    "status": "已核对2024-12官方工程文的方法结构；页面为动态文档，未把旧API示例当最新版本",
+    "venue_policy": "工程文章，不作为论文正式接收或复现证据"
+  },
+  {
+    "id": "S105",
+    "title": "Writing effective tools for AI agents—using AI agents",
+    "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "scope": "工具粒度、命名、输入语义、响应与失败评测；AG03、AG04",
+    "checked_on": "2026-09-15",
+    "status": "已核对2025官方工程文相关方法段落；订单接口与实验为教学设计",
+    "venue_policy": "工程文章，不作为论文正式接收或复现证据"
+  },
+  {
+    "id": "S106",
+    "title": "Introducing advanced tool use on the Claude Developer Platform",
+    "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "scope": "按需发现工具、程序化调用与调用示例的区别；AG07、AG14",
+    "checked_on": "2026-09-15",
+    "status": "已核对2025-11-24官方机制说明；不沿用当时beta状态作为当前产品承诺",
+    "venue_policy": "官方方法介绍，内部测试数字未写作本资料实测"
+  },
+  {
+    "id": "S107",
+    "title": "The 2026-07-28 Specification — Model Context Protocol",
+    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+    "scope": "MCP2026-07-28无状态核心、请求、扩展与授权变化；AG05、AG11",
+    "checked_on": "2026-09-15",
+    "status": "已核对官方发布说明的无握手/会话、请求元信息、扩展与授权段落；未运行SDK兼容性实验",
+    "venue_policy": "协议发布说明，不推断所有实现已经升级"
+  },
+  {
+    "id": "S108",
+    "title": "Agent2Agent Protocol Specification v1.0.0",
+    "url": "https://a2a-protocol.org/v1.0.0/specification/",
+    "scope": "Agent Card、消息、任务、产物、任务与连接生命周期；AG06",
+    "checked_on": "2026-09-15",
+    "status": "已核对固定1.0.0版本定义和任务/流生命周期；未执行跨实现互通实验",
+    "venue_policy": "协议规范，不作为协作质量保证"
+  },
+  {
+    "id": "S109",
+    "title": "The Bitter Lesson of Tool Calling",
+    "url": "https://arxiv.org/html/2608.06370v1",
+    "scope": "JSON与程序化工具调用的2026-08对照，以及BFCL子集和桩函数边界；AG07",
+    "checked_on": "2026-09-15",
+    "status": "已核对预印本v1第3节及结果设定：BFCL v4子集、桩函数不连接外部服务；未复现",
+    "venue_policy": "不由arXiv推断正式接收；不外推为生产端到端收益"
+  },
+  {
+    "id": "S110",
+    "title": "Towards a Science of Scaling Agent Systems",
+    "url": "https://arxiv.org/abs/2512.08296",
+    "scope": "任务可分性、顺序依赖、通信预算与多Agent协作收益；AG02、AG10",
+    "checked_on": "2026-09-15",
+    "status": "已核对作者论文的系统比较与预算/任务条件；无通用最优架构声明，未复现",
+    "venue_policy": "不由arXiv推断正式接收"
+  },
+  {
+    "id": "S111",
+    "title": "Computer use tool — Claude Platform Docs",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+    "scope": "由应用执行工具请求并返回观察、批量调用与运行循环；AG01、AG03、AG09、AG12",
+    "checked_on": "2026-09-15",
+    "status": "已核对当日官方动态文档的执行循环和批量响应说明；正文不绑定模型ID或特定SDK代码",
+    "venue_policy": "动态官方文档，软件实现仍需固定版本验证"
+  },
+  {
+    "id": "S112",
+    "title": "Effective context engineering for AI agents",
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "scope": "2025-09-29 官方工程文章；上下文筛选、按需加载、压缩、结构化笔记与长任务上下文管理",
+    "checked_on": "2026-09-15",
+    "status": "已阅读全文相关工程段落；教程的退款分层、诊断用例为自拟教学设计，未复现文中系统",
+    "venue_policy": "官方工程实践文章，不作为论文接收或通用最优性的证据"
+  },
+  {
+    "id": "S113",
+    "title": "Harness design for long-running application development",
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    "scope": "2026-03-24 官方工程文章；结构化交接、上下文重置、生成与评价分工，以及模型升级后重新检验支撑机制",
+    "checked_on": "2026-09-15",
+    "status": "已读重置与压缩差异、交接、评估及逐项简化机制段落；属特定模型/任务实验，未复现",
+    "venue_policy": "官方工程文章，不推断会议接收；不将特定模型现象推广为所有模型规则"
+  },
+  {
+    "id": "S114",
+    "title": "Equipping agents for the real world with Agent Skills",
+    "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+    "scope": "2025-10-16 官方工程文章；技能说明、脚本、附加资源及元信息到详细内容的渐进加载",
+    "checked_on": "2026-09-15",
+    "status": "已读技能结构、渐进加载、代码执行和开发评估段落；未据此假定各平台加载语义完全一致",
+    "venue_policy": "官方工程文章；技能加载不是模型权重训练，具体运行行为以平台版本为准"
+  },
+  {
+    "id": "S115",
+    "title": "How we built our multi-agent research system",
+    "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+    "scope": "2025-06-13 官方工程文章；委派边界、子任务上下文、成果引用传递、异步协调及状态一致性问题",
+    "checked_on": "2026-09-15",
+    "status": "已读架构、委派、评测与生产工程相关段落；未复现内部评测，不引用性能比例作为通用结论",
+    "venue_policy": "官方工程实践记录，不表示多 Agent 必然优于同预算单 Agent"
+  },
+  {
+    "id": "S116",
+    "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "url": "https://arxiv.org/html/2410.10813v2",
+    "scope": "2025-03-04 v2；记忆索引/检索/阅读分解，时间感知检索，召回与最终问答分开评估",
+    "checked_on": "2026-09-15",
+    "status": "已读基准构造、指标与第4节系统方法；受控历史基准，未运行评测；未用旧模型测量代表2026产品性能",
+    "venue_policy": "此处固定 arXiv v2 方法版本，不由 arXiv 页面自动推断会议接收"
+  },
+  {
+    "id": "S117",
+    "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+    "url": "https://arxiv.org/html/2602.02474v2",
+    "scope": "2026-05-24 v2；可训练技能选择控制器、固定LLM执行/设计器、难例驱动技能库更新；区别技能库与轨迹记忆库",
+    "checked_on": "2026-09-15",
+    "status": "已读第3节方法、实验设置及技能回退机制；对话问答与受控交互基准，未训练或复现",
+    "venue_policy": "不由论文关键词或 arXiv 页面推断正式接收；结果仅按原文任务范围解释"
+  },
+  {
+    "id": "S118",
+    "title": "Scaling Self-Evolving Agents via Parametric Memory",
+    "url": "https://arxiv.org/html/2606.04536v1",
+    "scope": "2026-06-03 v1；TMEM 轨迹内QA监督/LoRA更新，固定基座与快权重的区分，外层RL与停止梯度处理及计算成本",
+    "checked_on": "2026-09-15",
+    "status": "已读第3/4节方法、实验设置、消融和效率表；具体TMEM分支更新后不保留文本记忆，未复现或部署",
+    "venue_policy": "预印本方法解读；未核实会议接收，不以论文标题主张普适最优"
+  },
+  {
+    "id": "S119",
+    "title": "MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents",
+    "url": "https://arxiv.org/html/2608.12428v1",
+    "scope": "2026-08 v1；持续范围感知反馈、MindMemEvolve记忆结构演化、MindSkillEvolve轨迹驱动技能文本更新与版本管理",
+    "checked_on": "2026-09-15",
+    "status": "已读3.5—3.7方法与4.3技能实验；SpreadsheetBench-Verified 400任务使用实际工作簿自动核验，属基准而非普遍生产可靠性；未复现",
+    "venue_policy": "2026年8月预印本；区分外部记忆/技能文本更新与模型参数训练，不推断会议接收"
+  },
+  {
+    "id": "S120",
+    "title": "Agent Lightning v1.0: Towards Harnessed Agentic RL",
+    "url": "https://arxiv.org/html/2608.17528v1",
+    "scope": "AG25、AG26、AG35、AG36：harness 与训练解耦；真实采样上下文、retokenization、sample merging、rollout 级 advantage 与 loss normalization；核对方法第 2 节及 coding-agent 训练与防奖励漏洞段落",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-08-18 预印本 v1 方法和相关对照设置；未复现，不把框架特定实验等同普适最优配方",
+    "venue_policy": "不由 arXiv 自动推断会议正式接收"
+  },
+  {
+    "id": "S121",
+    "title": "Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards",
+    "url": "https://arxiv.org/html/2506.11425v1",
+    "scope": "AG27：训练期指导降低探索难度；计划、环境反馈、定位指导；由正确/错误轨迹形成偏好训练，测试移除额外指导；核对第 2.2.2、2.2.3 节与指导消融",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025-06 预印本 v1 方法与消融；未复现；不因 RLVR 名称推断为在线 PPO",
+    "venue_policy": "不由 arXiv 自动推断会议正式接收"
+  },
+  {
+    "id": "S122",
+    "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+    "url": "https://arxiv.org/html/2504.21798v1",
+    "scope": "AG25、AG29、AG36：先环境后任务；向真实仓库注入错误、执行验证与专家轨迹；核对第 2 节、附录 A.3 和 B 的任务生成策略。AG25 loss-mask 表是教程示意，不声称来自论文配方",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025-04-30 预印本 v1 方法与任务验证说明；未复现，不外推文中旧版本榜单排名",
+    "venue_policy": "不由 arXiv 自动推断会议正式接收"
+  },
+  {
+    "id": "S123",
+    "title": "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+    "url": "https://arxiv.org/html/2506.07982v1",
+    "scope": "AG30：telecom 双控制中用户和 Agent 各有工具；终态与约束；核对第 3 节与第 4.2 节 Default、No-User、Oracle Plan 对照，不把模拟用户等同真实用户",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2025-06-09 预印本 v1 环境定义、任务评测与诊断对照；未复现；当前仓库后续演进另见 S126",
+    "venue_policy": "不由 arXiv 自动推断会议正式接收"
+  },
+  {
+    "id": "S124",
+    "title": "Terminal-Bench 4.0 — Calibrating task resources, fixing tasks, and removing saturated tasks",
+    "url": "https://www.tbench.ai/news/terminal-bench-4-0",
+    "scope": "AG30、AG33、AG36：官方 4.0 更新说明，资源校准、任务修复和移除；breaking changes 需重跑，不直接跨版本比较",
+    "checked_on": "2026-09-15",
+    "status": "已核对官方 2026-08-28 发布入口与 4.0 全文更新说明；未运行基准，未复核任何当前模型名次",
+    "venue_policy": "官方软件/基准发布说明，不作为会议论文接收证据"
+  },
+  {
+    "id": "S125",
+    "title": "Demystifying evals for AI agents",
+    "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "scope": "AG31—AG35：trace 与 outcome 分开，代码/模型/人工评分器，pass@k 与 pass^k，评测集与运行监测；已核对相关方法段落。数值实验和报销流程为教程自己的示例",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-01-09 官方工程文章的术语、评分器和实践段落；不是平台效果排名或统计定理来源",
+    "venue_policy": "官方技术文章，不作为会议论文接收证据"
+  },
+  {
+    "id": "S126",
+    "title": "Sierra τ-Bench / τ³-bench official repository and version notes",
+    "url": "https://github.com/sierra-research/tau2-bench",
+    "scope": "AG30、AG33、AG36：README 中 τ³ 知识检索/全双工语音扩展、2026-07 v1.0.1 banking_knowledge grading 变更及跨版本结果限制；核对对应当前 README 段落",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-09-15 官方仓库 main 页面快照及其明示的 v1.0.1 说明；未固定完整 commit、未安装或复跑；实际实验需另行 pin 版本",
+    "venue_policy": "官方软件文档；不从 README 自动推断各组件论文正式接收"
+  },
+  {
+    "id": "S127",
+    "title": "SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+    "url": "https://arxiv.org/html/2609.08149v1",
+    "scope": "AG29、AG30、AG36：基准修订与防答案泄漏；核对第 3 节任务定义、仓库/运行隔离及描述和测试修订方法；不照搬基准特定访问限制作为一般生产工具权限",
+    "checked_on": "2026-09-15",
+    "status": "已核对 2026-09-08 预印本 v1 方法；未复现，未宣称独立确认其全部修复或成为通用最可靠基准",
+    "venue_policy": "不由 arXiv 或论文标题 Verified 自动推断会议接收与完全可靠"
+  },
+  {
+    "id": "S128",
+    "title": "PyTorch 2.14 scaled_dot_product_attention",
+    "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.functional.scaled_dot_product_attention.html",
+    "scope": "TH04、TH05、TH17、TH20：参考计算、bool mask、dropout 与非方形因果 mask；教学实现另做数值与梯度对照",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S129",
+    "title": "PyTorch 2.14 MultiheadAttention",
+    "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.MultiheadAttention.html",
+    "scope": "TH02、TH05、TH06、TH20、TH21：形状、mask 反向语义及 self/cross 对照",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S130",
+    "title": "PyTorch 2.14 CrossEntropyLoss",
+    "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.CrossEntropyLoss.html",
+    "scope": "TH14—TH16：logits 输入、标签维度与忽略标签；下一 token 移位由本教程构造",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S131",
+    "title": "PyTorch 2.14 LayerNorm",
+    "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.LayerNorm.html",
+    "scope": "TH07：末维归一化与总体方差约定",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S132",
+    "title": "Happy-LLM — 从零开始构建大模型",
+    "url": "https://github.com/datawhalechina/happy-llm",
+    "scope": "TH01、TH22：借鉴基础到实现的课程组织；非算法新结论或面试频率证据",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S133",
+    "title": "Hello-Agents — 从零开始构建智能体",
+    "url": "https://github.com/datawhalechina/hello-agents",
+    "scope": "TH22：借鉴基本循环到工具、记忆与项目的教学组织；非公司面试要求证据",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S134",
+    "title": "Build a Large Language Model (From Scratch) — official code",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "scope": "TH01、TH10、TH13、TH16、TH22：模块化代码、习题及 GPT 实现的教学组织；本章自行编写实现",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  },
+  {
+    "id": "S135",
+    "title": "LLMGuide — 大模型面试指南",
+    "url": "https://github.com/Meko1/llm-interview-guide",
+    "scope": "TH01、TH21、TH22：借鉴基础直觉、连续追问与手写练习的内容组织；不采用未经独立验证的公司面经结论",
+    "checked_on": "2026-09-16",
+    "status": "已阅读官方页面；接口固定 2.14，课程仓库记录本次阅读日期；本地实现另有 CPU 检查",
+    "venue_policy": "官方文档与课程资料，不涉及会议接收推断"
+  }
+]

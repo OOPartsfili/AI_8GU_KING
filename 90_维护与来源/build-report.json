@@ -1,0 +1,18 @@
+{
+  "question_count": 341,
+  "main_chapters": 21,
+  "source_count": 135,
+  "authored_main_characters": 225110,
+  "priority_counts": {
+    "P0": 266,
+    "P1": 69,
+    "P2": 6
+  },
+  "core_count": 48,
+  "beginner_count": 20,
+  "teaching_coverage": 341,
+  "math_errors": [],
+  "math_count": 79,
+  "structural_errors": [],
+  "scope": "结构、引用存在性与数学转换检查；不替代内容和浏览器审查"
+}

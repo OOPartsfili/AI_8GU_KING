@@ -1,0 +1,31 @@
+# Local development, backups, generated screenshots and environments
+/work/
+/tmp/
+/output/
+/.venv*/
+/venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Personal source material and machine-specific delivery records
+/90_维护与来源/岗位背景报告_2026.pdf
+/90_维护与来源/delivery-audit.json
+/90_维护与来源/final-manifest.json
+/90_维护与来源/vendor/bin/
+qa-progress.json
+*复习进度*.json
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+/.codex/
+/.agents/
+/.vscode/
+/.idea/

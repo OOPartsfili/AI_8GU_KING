@@ -1,0 +1,81 @@
+{
+  "version": "1.3",
+  "checked_on": "2026-09-15",
+  "examples": {
+    "opd_advantage_log_0_5_over_0_2": 0.9162907318741551,
+    "reverse_kl_fixed_history": 0.2248588423262698,
+    "direct_gradient": [
+      -0.19081772379086442,
+      -0.15300154454090562,
+      0.34381926833177
+    ],
+    "enumerated_policy_gradient": [
+      -0.19081772379086445,
+      -0.1530015445409056,
+      0.34381926833177
+    ],
+    "gradient_max_absolute_difference": 2.7755575615628914e-17,
+    "gspo_geometric_ratio_2_and_half": 1.0,
+    "arithmetic_ratio_for_comparison": 1.25,
+    "sapo_derivatives_at_one": {
+      "0.5": 1.0,
+      "1": 1.0,
+      "2": 1.0
+    },
+    "gdpo_example_advantages": [
+      [
+        -1.3660254037838575,
+        -0.4999999999991227,
+        1.8660254037829802
+      ],
+      [
+        -0.366025403785591,
+        -0.13397459621353172,
+        0.49999999999912265
+      ]
+    ],
+    "ntp_inputs": [
+      "我",
+      "喜欢",
+      "机器"
+    ],
+    "ntp_targets": [
+      "喜欢",
+      "机器",
+      "学习"
+    ],
+    "allowed_attention": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "weighted_mean_loss": 2.5,
+    "batch_budget": {
+      "tokens_per_update": 65536,
+      "total_tokens": 65536000,
+      "approximate_dense_flops": 393216000000000000
+    },
+    "one_billion_parameters_twenty_billion_tokens_flops": 120000000000000000000,
+    "scope": "CPU numerical teaching only; no model or teacher execution."
+  },
+  "passed_tests": {
+    "core": 18,
+    "distillation": 5,
+    "rendering": 5,
+    "posttraining_pretraining": 7
+  },
+  "total_passed": 35,
+  "scope": "实际 CPU 数值与回归检查；没有执行模型训练或教师调用。"
+}

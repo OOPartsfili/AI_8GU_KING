@@ -1,0 +1,31 @@
+/* Small, on-demand teaching panels; no animation loop, network or global observers. */
+.viz-panel{margin:18px 0;border:1px solid var(--line);border-radius:9px;background:var(--paper)}
+.viz-panel>summary{padding:12px 16px;color:var(--green);cursor:pointer;font-weight:650}
+.viz-panel[open]>summary{border-bottom:1px solid var(--line)}
+.viz-host{padding:16px;min-width:0;max-width:100%}.viz-host h3{margin:0 0 8px}
+.viz-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:16px 0}
+.viz-controls label{display:flex;align-items:center;flex-wrap:wrap;gap:7px;font-size:14px;max-width:100%}
+.viz-controls select{max-width:100%;min-height:34px}.viz-controls input[type=range]{width:135px;max-width:45vw}
+.viz-controls input[type=checkbox]{width:18px;height:18px}.viz-controls output{font-variant-numeric:tabular-nums;min-width:2ch}
+.viz-result{min-width:0}.viz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+.viz-table-wrap{overflow-x:auto;max-width:100%;margin:10px 0;overscroll-behavior-x:contain}
+.viz-matrix{display:table;width:100%;min-width:0;overflow:visible;table-layout:auto;font-variant-numeric:tabular-nums;margin:0}
+.viz-matrix caption{text-align:left;font-size:14px;color:var(--muted);padding:4px 0 8px}
+.viz-matrix th,.viz-matrix td{padding:6px;text-align:center;white-space:nowrap;font-size:13px;min-width:0}
+.viz-matrix th{white-space:normal;min-width:30px}
+.viz-matrix button{font:inherit;min-width:40px;min-height:36px;color:var(--ink);background:transparent;border:1px solid transparent;border-radius:4px;cursor:pointer}
+.viz-matrix button[aria-pressed=true]{outline:2px solid var(--green);outline-offset:-2px;background:#dce8df}
+.viz-matrix td.viz-hidden{color:var(--muted);background:repeating-linear-gradient(135deg,transparent,transparent 4px,#e4e9e5 4px,#e4e9e5 5px)}
+.viz-detail{padding:12px 14px;border-left:3px solid var(--green);background:#edf4ee;margin:12px 0;overflow-wrap:anywhere}
+.viz-detail code{white-space:normal}.viz-result pre{max-width:100%;overflow-x:auto}
+.viz-flow{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap;margin:12px 0}
+.viz-node{padding:10px 14px;border:1px solid var(--line);border-radius:6px;flex:1 1 130px;min-width:0}
+.viz-node strong,.viz-node span{display:block}.viz-node.active{background:#e1eee4;border-color:var(--green)}
+.viz-node span{font-size:13px;color:var(--muted)}.viz-token{padding:7px 11px;border-radius:4px;background:#e5eee7;font-variant-numeric:tabular-nums}
+.viz-token.new{background:#f4ddc5}.viz-bars{display:grid;gap:10px}.viz-bar-row{display:grid;grid-template-columns:94px minmax(70px,1fr) 70px;gap:8px;align-items:center;font-size:14px;font-variant-numeric:tabular-nums}
+.viz-track{height:18px;background:#e4e9e5;overflow:hidden}.viz-fill{height:100%;background:var(--green)}.viz-fill.secondary{background:#ad5d29}
+.viz-svg{display:block;width:min(100%,330px);height:auto;margin:auto;overflow:visible}.viz-svg text{fill:var(--ink);font-size:13px}
+.viz-picker{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.viz-picker .btn[aria-current=true]{background:var(--green);color:#fff}
+.viz-note{font-size:13px;color:var(--muted)}
+@media(max-width:520px){.viz-host{padding:12px}.viz-bar-row{grid-template-columns:80px minmax(45px,1fr) 61px;font-size:13px}.viz-controls{gap:12px}.viz-node{flex-basis:105px}.viz-matrix th,.viz-matrix td{padding:4px}.viz-matrix button{min-width:36px}.viz-picker .btn{font-size:13px}}
+@media print{.viz-panel{break-inside:avoid}.viz-controls{display:none}}

@@ -1,0 +1,7 @@
+{
+  "version": "1.5",
+  "chapter_questions": 22,
+  "matching_reference_regions": 16,
+  "executed_code_blocks": 20,
+  "scope": "Each displayed Python block executed with its documented complete-module dependencies. Not each block standalone."
+}

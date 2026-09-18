@@ -1,0 +1,19 @@
+{
+  "version": "1.5",
+  "question_count": 341,
+  "chapter_count": 21,
+  "source_count": 135,
+  "teaching_coverage": 341,
+  "old_questions_preserved": 319,
+  "new_transformer_questions": 22,
+  "original_question_body_and_html_identical": true,
+  "new_questions_have_exercise_answer_followup": true,
+  "unknown_sources": [],
+  "unreferenced_sources": [],
+  "beginner_and_core_unchanged": true,
+  "original_report_unchanged": true,
+  "original_report_sha256": "b017e85c2561242f297bca90b937b0a8342027e7866bf87132371d09e8ced363",
+  "reader_sha256": "fc8de0c5773cf3709ee3958cade9ca32ab1acaa3cecb163c6f896c6aee575c74",
+  "code_blocks_executed": 20,
+  "cpu_and_render_tests": 63
+}

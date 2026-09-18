@@ -1,0 +1,318 @@
+[
+  {
+    "latex": "\\pi_\\theta(y|x)=\\prod_{t=1}^{T}\\pi_\\theta(y_t|x,y_{<t})",
+    "display": "block"
+  },
+  {
+    "latex": "\\log\\pi_\\theta(y|x)=\\sum_{t=1}^{T}\\log\\pi_\\theta(y_t|x,y_{<t}).",
+    "display": "block"
+  },
+  {
+    "latex": "\\text{本次扣分}=-\\ln(\\text{模型给实际结果的概率})",
+    "display": "block"
+  },
+  {
+    "latex": "H(p,q)=0.8\\times(-\\ln0.6)+0.2\\times(-\\ln0.4)\\approx0.592",
+    "display": "block"
+  },
+  {
+    "latex": "H(p)=0.8\\times(-\\ln0.8)+0.2\\times(-\\ln0.2)\\approx0.500",
+    "display": "block"
+  },
+  {
+    "latex": "D_{\\mathrm{KL}}(p\\|q)=H(p,q)-H(p)\\approx0.592-0.500=0.092",
+    "display": "block"
+  },
+  {
+    "latex": "H(p,q)=-\\sum_i p_i\\log q_i",
+    "display": "block"
+  },
+  {
+    "latex": "D_{\\mathrm{KL}}(p\\|q)=H(p,q)-H(p).",
+    "display": "block"
+  },
+  {
+    "latex": "p_i=\\frac{e^{z_i-m}}{\\sum_j e^{z_j-m}}",
+    "display": "block"
+  },
+  {
+    "latex": "\\log\\sum_i e^{z_i}=m+\\log\\sum_i e^{z_i-m},\\ m=\\max_i z_i.",
+    "display": "block"
+  },
+  {
+    "latex": "[0.2,0.3,0.5]-[0,1,0]=[0.2,-0.7,0.5]",
+    "display": "block"
+  },
+  {
+    "latex": "L=-\\sum_i y_i\\log p_i=-\\sum_i y_i z_i+\\log\\sum_j e^{z_j}",
+    "display": "block"
+  },
+  {
+    "latex": "\\frac{\\partial L}{\\partial z_i}=p_i-y_i.",
+    "display": "block"
+  },
+  {
+    "latex": "\\mathrm{PPL}=\\exp\\left(-\\frac{1}{N}\\sum_{t=1}^{N}\\log p_t\\right).",
+    "display": "block"
+  },
+  {
+    "latex": "H(p)=-\\sum_i p_i\\log p_i,\\qquad p_i(T)=\\mathrm{softmax}(z_i/T),\\ T>0.",
+    "display": "block"
+  },
+  {
+    "latex": "\\mathbb E_{a\\sim p}[f(a)]=\\mathbb E_{a\\sim q}\\left[\\frac{p(a)}{q(a)}f(a)\\right].",
+    "display": "block"
+  },
+  {
+    "latex": "Q=XW_Q,\\ K=XW_K,\\ V=XW_V",
+    "display": "block"
+  },
+  {
+    "latex": "O=\\mathrm{softmax}(QK^\\top/\\sqrt{d_k}+M)V.",
+    "display": "block"
+  },
+  {
+    "latex": "\\langle R_mq,R_nk\\rangle=q^\\top R_m^\\top R_n k=q^\\top R_{n-m}k.",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\mathrm{SFT}}=-\\frac{\\sum_{i,t}m_{i,t}\\log\\pi_\\theta(y_{i,t}|x_i,y_{i,<t})}{\\sum_{i,t}m_{i,t}}.",
+    "display": "block"
+  },
+  {
+    "latex": "W\\in\\mathbb R^{d_{\\rm out}\\times d_{\\rm in}}",
+    "display": "block"
+  },
+  {
+    "latex": "A\\in\\mathbb R^{r\\times d_{\\rm in}}",
+    "display": "block"
+  },
+  {
+    "latex": "B\\in\\mathbb R^{d_{\\rm out}\\times r}.",
+    "display": "block"
+  },
+  {
+    "latex": "\\max_\\pi\\ \\sum_y\\pi(y|x)r(x,y)-\\beta\n\\sum_y\\pi(y|x)\\log\\frac{\\pi(y|x)}{\\pi_{\\rm ref}(y|x)},\\ \\beta>0.",
+    "display": "block"
+  },
+  {
+    "latex": "r-\\beta(\\log(\\pi/\\pi_{\\rm ref})+1)+\\lambda=0.",
+    "display": "block"
+  },
+  {
+    "latex": "\\pi^*(y|x)=\\frac{\\pi_{\\rm ref}(y|x)e^{r(x,y)/\\beta}}{Z(x)}",
+    "display": "block"
+  },
+  {
+    "latex": "r(x,y)=\\beta\\log\\frac{\\pi^*(y|x)}{\\pi_{\\rm ref}(y|x)}+\\beta\\log Z(x).",
+    "display": "block"
+  },
+  {
+    "latex": "\\Delta_\\theta=\\log\\pi_\\theta(y_w|x)-\\log\\pi_\\theta(y_l|x)",
+    "display": "block"
+  },
+  {
+    "latex": "\\Delta_{\\rm ref}=\\log\\pi_{\\rm ref}(y_w|x)-\\log\\pi_{\\rm ref}(y_l|x).",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\rm DPO}=-\\mathbb E\\log\\sigma\\big(\\beta(\\Delta_\\theta-\\Delta_{\\rm ref})\\big).",
+    "display": "block"
+  },
+  {
+    "latex": "\\nabla_\\theta L=-\\beta\\sigma(-z)\n\\left[\\nabla_\\theta\\log\\pi_\\theta(y_w|x)-\\nabla_\\theta\\log\\pi_\\theta(y_l|x)\\right].",
+    "display": "block"
+  },
+  {
+    "latex": "a_\\theta(x,y)=\\frac{1}{|y|}\\log\\pi_\\theta(y|x)",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\rm SimPO}=-\\mathbb E\\log\\sigma\\big(\\beta(a_w-a_l)-\\gamma\\big).",
+    "display": "block"
+  },
+  {
+    "latex": "r=\\log\\frac{\\pi_\\theta(y|x)}{\\pi_{\\rm ref}(y|x)}",
+    "display": "block"
+  },
+  {
+    "latex": "z_0=D_{\\rm KL}(\\pi_\\theta(\\cdot|x)\\|\\pi_{\\rm ref}(\\cdot|x)).",
+    "display": "block"
+  },
+  {
+    "latex": "L_D=\\lambda_D[1-\\sigma(\\beta(r-z_0))]",
+    "display": "block"
+  },
+  {
+    "latex": "L_U=\\lambda_U[1-\\sigma(\\beta(z_0-r))].",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\rm RM}=-\\mathbb E\\log\\sigma(r_\\phi(x,y_w)-r_\\phi(x,y_l)).",
+    "display": "block"
+  },
+  {
+    "latex": "\\nabla_\\theta \\mathbb E_{\\tau\\sim\\pi_\\theta}[R(\\tau)]\n=\\mathbb E_\\tau\\left[R(\\tau)\\nabla_\\theta\\log\\pi_\\theta(\\tau)\\right].",
+    "display": "block"
+  },
+  {
+    "latex": "r_t(\\theta)=\\frac{\\pi_\\theta(a_t|s_t)}{\\pi_{\\rm old}(a_t|s_t)}",
+    "display": "block"
+  },
+  {
+    "latex": "J_{\\rm clip}=\\mathbb E\\min\\big(r_tA_t,\\ \\mathrm{clip}(r_t,1-\\epsilon,1+\\epsilon)A_t\\big).",
+    "display": "block"
+  },
+  {
+    "latex": "\\delta_t=r_t+\\gamma V(s_{t+1})-V(s_t)",
+    "display": "block"
+  },
+  {
+    "latex": "\\hat A_t=\\sum_{l\\ge0}(\\gamma\\lambda)^l\\delta_{t+l}.",
+    "display": "block"
+  },
+  {
+    "latex": "\\hat A_i=\\frac{R_i-\\bar R}{\\mathrm{std}(R_1,\\ldots,R_G)+\\varepsilon}.",
+    "display": "block"
+  },
+  {
+    "latex": "J=\\mathbb E\\left[\\frac1G\\sum_{i=1}^{G}\\frac1{|y_i|}\n\\sum_t\\left(\\min(r_{i,t}\\hat A_i,\\mathrm{clip}(r_{i,t},1-\\epsilon,1+\\epsilon)\\hat A_i)\n-\\beta D_{i,t}\\right)\\right].",
+    "display": "block"
+  },
+  {
+    "latex": "u-\\log u-1\\ge0.",
+    "display": "block"
+  },
+  {
+    "latex": "P=\\frac{TP}{TP+FP},\\quad R=\\frac{TP}{TP+FN},\\quad F1=\\frac{2PR}{P+R}.",
+    "display": "block"
+  },
+  {
+    "latex": "\\widehat{\\mathrm{pass@}k}=1-\\frac{\\binom{n-c}{k}}{\\binom nk}.",
+    "display": "block"
+  },
+  {
+    "latex": "\\mathrm{RRF}(d)=\\sum_j\\frac1{k_0+\\mathrm{rank}_j(d)}.",
+    "display": "block"
+  },
+  {
+    "latex": "L=-\\log\\frac{\\exp(s(q,d^+)/\\tau)}{\\exp(s(q,d^+)/\\tau)+\\sum_j\\exp(s(q,d_j^-)/\\tau)}.",
+    "display": "block"
+  },
+  {
+    "latex": "M_{\\rm KV}=2\\cdot L_{\\rm layers}\\cdot B\\cdot T\\cdot H_{\\rm kv}\\cdot d_h\\cdot b.",
+    "display": "block"
+  },
+  {
+    "latex": "b_{t+1}(s')\\propto O(o_{t+1}|s',a_t)\\sum_s T(s'|s,a_t)b_t(s).",
+    "display": "block"
+  },
+  {
+    "latex": "\\log\\frac{p}{1-p}=w^\\top x+b,\\quad p=\\sigma(w^\\top x+b).",
+    "display": "block"
+  },
+  {
+    "latex": "p_i^{(T)}=\\frac{\\exp(v_i/T)}{\\sum_j\\exp(v_j/T)}",
+    "display": "block"
+  },
+  {
+    "latex": "q_i^{(T)}=\\frac{\\exp(z_i/T)}{\\sum_j\\exp(z_j/T)}",
+    "display": "block"
+  },
+  {
+    "latex": "L=(1-\\alpha)L_{\\mathrm{hard}}+\\alpha T^2 D_{\\mathrm{KL}}(p^{(T)}\\|q^{(T)})",
+    "display": "block"
+  },
+  {
+    "latex": "D_{\\mathrm{KL}}(p\\|q)=\\sum_i p_i\\log\\frac{p_i}{q_i}",
+    "display": "block"
+  },
+  {
+    "latex": "D_{\\mathrm{KL}}(q\\|p)=\\sum_i q_i\\log\\frac{q_i}{p_i}",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\mathrm{seq}}=-\\sum_t\\log q_\\theta(y_t^*\\mid x,y_{<t}^*)",
+    "display": "block"
+  },
+  {
+    "latex": "L=\\mathbb E_{h\\sim d_q}\\left[D(p(\\cdot\\mid h),q_\\theta(\\cdot\\mid h))\\right]",
+    "display": "block"
+  },
+  {
+    "latex": "L(x)=\\mathbb E_{y\\sim q_\\theta(\\cdot\\mid x)}\n\\left[\\log q_\\theta(y\\mid x)-\\log p(y\\mid x)\\right]",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\mathrm{feat}}=\\|P(h_{\\mathrm{student}})-h_{\\mathrm{teacher}}\\|_2^2",
+    "display": "block"
+  },
+  {
+    "latex": "c_{\\mathrm{hybrid}}=c_{\\mathrm{student}}+\\rho c_{\\mathrm{teacher}}",
+    "display": "block"
+  },
+  {
+    "latex": "N_{\\mathrm{break}}=\\frac{C_{\\mathrm{setup}}}\n{c_{\\mathrm{teacher}}-c_{\\mathrm{hybrid}}}",
+    "display": "block"
+  },
+  {
+    "latex": "A(a,h)=\\mathrm{sg}\\left[\\log p(a\\mid h)-\\log q(a\\mid h)\\right]",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\mathrm{local}}=-A(a,h)\\log q_\\theta(a\\mid h)",
+    "display": "block"
+  },
+  {
+    "latex": "q_\\theta(\\cdot\\mid x,h)",
+    "display": "block"
+  },
+  {
+    "latex": "p_{\\mathrm{teacher}}=\\mathrm{sg}\\left[q_\\theta(\\cdot\\mid x,y^*,h)\\right]",
+    "display": "block"
+  },
+  {
+    "latex": "L(h)=D_{\\mathrm{KL}}\\left(q_\\theta(\\cdot\\mid h)\\|p_{d(x)}(\\cdot\\mid h)\\right)",
+    "display": "block"
+  },
+  {
+    "latex": "r_{i,t}=\\frac{q_\\theta(y_{i,t}\\mid h_{i,t})}{q_{\\mathrm{old}}(y_{i,t}\\mid h_{i,t})}",
+    "display": "block"
+  },
+  {
+    "latex": "s_i=\\exp\\left(\\frac{1}{L_i}\\sum_t\\log r_{i,t}\\right)",
+    "display": "block"
+  },
+  {
+    "latex": "f(r)=\\frac{4}{\\tau}\\sigma\\left(\\tau(r-1)\\right)",
+    "display": "block"
+  },
+  {
+    "latex": "a_{j,k}=\\frac{r_{j,k}-\\mu_k}{\\sigma_k+\\epsilon}",
+    "display": "block"
+  },
+  {
+    "latex": "b_j=\\sum_k a_{j,k}",
+    "display": "block"
+  },
+  {
+    "latex": "L_{\\mathrm{NTP}}=-\\frac{1}{T}\\sum_{t=1}^{T}\\log q_\\theta(x_t\\mid x_{<t})",
+    "display": "block"
+  },
+  {
+    "latex": "C\\approx 6ND",
+    "display": "block"
+  },
+  {
+    "latex": "B_{\\mathrm{tokens}}=n\\,b\\,g\\,L",
+    "display": "block"
+  },
+  {
+    "latex": "L=L_{\\mathrm{next}}+\\sum_{k=2}^{K}\\lambda_k L_{\\mathrm{future},k}",
+    "display": "block"
+  },
+  {
+    "latex": "\\mathrm{PPL}=\\exp(L_{\\mathrm{NLL}})",
+    "display": "block"
+  }
+]

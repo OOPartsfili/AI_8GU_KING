@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大模型算法面试知识库</title>
+<style>
+:root{--paper:#f7f6f1;--ink:#172c38;--muted:#52646b;--line:#dce1dc;--green:#18635a;--soft:#e8f1eb;--white:#fff;--accent:#ad5d29}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+button,input,select{font:inherit}button,a,summary,select{touch-action:manipulation}a{color:var(--green);text-underline-offset:3px}button{cursor:pointer}
+.shell{max-width:1570px;margin:auto;display:grid;grid-template-columns:285px minmax(0,1fr);min-height:100vh}
+aside{border-right:1px solid var(--line);padding:30px 20px;position:sticky;top:0;height:100vh;overflow:auto;background:#efefe8}
+.brand{font:700 21px/1.4 Georgia,"Microsoft YaHei",serif;letter-spacing:.03em;margin:0 0 8px}.tagline{color:var(--muted);font-size:12px;letter-spacing:.14em}
+.navlabel{font-size:12px;letter-spacing:.12em;margin:24px 8px 6px;color:var(--muted)}nav button{display:block;border:0;background:transparent;text-align:left;width:100%;padding:8px 10px;color:var(--ink);font-size:13px;line-height:1.5;border-radius:6px}
+nav button:hover,nav button.active{background:#dce8df;color:#144d44}
+main{min-width:0;padding:28px 46px 80px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted);margin-bottom:24px}
+.edition{letter-spacing:.15em}.toolbar{padding:18px;border:1px solid var(--line);background:#ffffffb0;border-radius:10px;margin:20px 0 24px}
+.searchline{display:flex;gap:8px}.searchline input{flex:1;min-width:0;padding:10px 13px;border:1px solid #c9d5ce;border-radius:5px;background:white}
+.btn{border:1px solid #c9d5ce;border-radius:5px;background:white;padding:7px 13px;color:var(--ink);font-size:13px}.btn.primary{background:var(--green);border-color:var(--green);color:white}.btn:hover{filter:brightness(.96)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center}.filters select{max-width:170px;font-size:12px;border:1px solid var(--line);border-radius:5px;background:white;padding:6px}
+.small{font-size:12px;color:var(--muted)}#notice{font-size:13px;min-height:22px;margin:8px 0}.hero{padding:24px 0 18px;border-bottom:2px solid var(--ink);margin-bottom:28px}.eyebrow{font-size:12px;letter-spacing:.2em;color:var(--green);font-weight:bold}
+h1{font:700 36px/1.4 Georgia,"Microsoft YaHei",serif;letter-spacing:.025em;margin:14px 0 16px}h2{font-size:23px;line-height:1.5;margin:30px 0 12px}h3{font-size:18px;margin-top:24px}p{margin:12px 0}.lede{max-width:780px;font-size:17px;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:30px;margin:26px 0}.stat strong{display:block;font:700 30px Georgia,serif;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.track{border:1px solid var(--line);padding:18px;text-align:left;background:white;border-radius:8px}.track b{display:block;font-size:16px;margin-bottom:5px}.track span{font-size:13px;color:var(--muted)}
+.sectionhead{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-bottom:14px}.sectionhead h2{margin:0}.resultcount{color:var(--muted);font-size:13px}
+.question{background:white;border:1px solid var(--line);border-radius:8px;margin:12px 0;overflow:hidden;scroll-margin-top:20px}
+.question{content-visibility:auto;contain-intrinsic-size:auto 64px}
+.question:only-of-type{content-visibility:visible;contain-intrinsic-size:none}
+.question summary{padding:17px 20px;cursor:pointer;display:flex;gap:12px;align-items:baseline;list-style:none;line-height:1.6}.question summary::-webkit-details-marker{display:none}
+.question summary:before{content:"+";color:var(--green);font-weight:bold;flex:none}.question[open] summary:before{content:"−"}.qid{font-size:12px;color:var(--green);font-weight:bold;white-space:nowrap}.qtitle{font-size:16px;font-weight:600;flex:1}
+.pill{font-size:10px;border:1px solid #d3ddd6;border-radius:20px;padding:1px 7px;color:var(--muted);white-space:nowrap}.question[open] summary{border-bottom:1px solid var(--line);background:#f5faf6}
+.qbody{padding:6px 24px 18px}.qbody p{font-size:15px}.qfooter{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px dashed var(--line);padding:12px 24px;background:#fcfcf9}
+.study{font-size:12px;padding:5px;border:1px solid var(--line);border-radius:4px}.ref{font-size:.9em}.article{background:white;border:1px solid var(--line);padding:24px 30px;border-radius:8px}
+.article h1{font-size:30px}.article h2{font-size:20px}.article ul,.qbody ul{padding-left:24px}
+table{border-collapse:collapse;display:block;width:100%;overflow:auto;font-size:13px;margin:18px 0}th,td{padding:10px 13px;text-align:left;border:1px solid var(--line);vertical-align:top;min-width:90px}th{background:var(--soft);font-weight:600}
+pre{overflow:auto;background:#f1f3f1;padding:18px;border-radius:5px;font-size:12px;line-height:1.7}code{font-family:Consolas,monospace}.formula{overflow:auto;padding:18px 10px;background:#f6f8f6;border-left:3px solid #aec9bb;margin:18px 0}math{font-size:1.06em}.formula>math{width:max-content;min-width:100%;margin:0}.formula:focus-visible{outline-offset:1px}blockquote{border-left:3px solid #acc4b4;padding-left:18px;margin-left:0;color:var(--muted)}
+.source{scroll-margin-top:24px;padding:20px 0;border-bottom:1px solid var(--line)}.source h3{margin:0 0 8px}.source p{font-size:14px}.progress{height:5px;background:#d6dfd8;border-radius:5px;margin-top:9px;overflow:hidden}.progress div{height:100%;background:var(--green);transition:width .2s}
+.empty{padding:35px;background:white;border:1px dashed #b7c9bf;border-radius:8px;color:var(--muted)}.muted{color:var(--muted)}.sr{position:absolute;left:-10000px}
+:focus-visible{outline:3px solid #b8823c;outline-offset:3px}.printOnly{display:none}
+@media(max-width:1000px){.shell{grid-template-columns:225px minmax(0,1fr)}main{padding:24px}aside{padding:22px 12px}h1{font-size:29px}}
+@media(max-width:720px){.shell{display:block}aside{position:relative;width:100%;height:auto;max-height:230px;border-right:0;border-bottom:1px solid var(--line);padding:16px}nav{display:flex;flex-wrap:wrap;gap:4px}nav .navlabel{width:100%;margin:8px 0 0}nav button{width:auto;font-size:12px;padding:5px 8px}.brand{font-size:20px}.tagline{font-size:10px}main{padding:20px 14px 55px}.topline{margin-bottom:10px}.tracks{grid-template-columns:1fr}.stats{gap:20px}h1{font-size:27px}.question summary{padding:13px 12px;gap:7px}.qtitle{font-size:14px}.qbody{padding:5px 15px 15px}.article{padding:16px}.qfooter{padding:10px 15px}.filters select{max-width:140px}.pill{font-size:9px}.toolbar{padding:12px}.sectionhead{align-items:flex-start}.searchline .btn{padding:6px 9px}}
+@media print{aside,.toolbar,.topline,.qfooter,.sectionhead button{display:none!important}.shell{display:block}main{padding:0}body{background:white;color:black}details{break-inside:avoid}details:not([open]) .qbody{display:block}summary{list-style:none}.question{border:0;border-bottom:1px solid #ddd}.printOnly{display:block}}
+
+.qbody>h3{font-size:19px;color:#18584e;margin:25px 0 12px;line-height:1.6}
+.qbody>p{font-size:16px;line-height:1.95;max-width:850px}
+.deep{margin:24px 0 4px;border:1px solid #ccdcd0;border-radius:6px;background:#fafcf9}
+.question .deep>summary{display:block;padding:12px 15px;font-size:13px;font-weight:500;line-height:1.7;background:#eef4ee;border:0;list-style:none}
+.question .deep>summary:before{content:"+ ";color:#18635a}
+.question .deep[open]>summary:before{content:"− "}
+.deepbody{padding:5px 18px 15px}.deepbody p{font-size:14px;line-height:1.9}
+.beginner-note{color:#52646b;font-size:14px;max-width:760px}
+@media(max-width:720px){.qbody>p{font-size:15px}.qbody>h3{font-size:17px}.deepbody{padding:3px 12px 12px}.question .deep>summary{font-size:12px}}
+@media print{details.deep:not([open]) .deepbody{display:block}.deep{border:0}}
+@media print{.question{content-visibility:visible;contain-intrinsic-size:none}}
+.agent-walk{background:#f4f8f5;border:1px solid #cbdcd3;border-radius:12px;padding:18px;margin:18px 0 24px}.agent-walk-controls{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.agent-walk label{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.agent-steps{display:flex;gap:7px;flex-wrap:wrap;padding:0!important;list-style:none;margin:18px 0!important}.agent-steps li{padding:5px 9px;background:#e7eeea;border-radius:6px;font-size:12px}.agent-steps li.active{background:var(--accent);color:white}.agent-walk-state{background:#fff;padding:18px;border-radius:8px;margin:10px 0 16px}.agent-walk-state h3{margin-top:0}.agent-state-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.agent-state-grid p{border-left:3px solid #c5d9cb;padding-left:12px}.agent-lesson{border-top:1px solid #e4e9e6;padding-top:14px}.agent-walk button:disabled{opacity:.45;cursor:default}@media(max-width:560px){.agent-state-grid{grid-template-columns:1fr;gap:0}.agent-walk{padding:12px}.agent-walk-state{padding:12px}}
+
+__VISUAL_CSS__
+</style>
+</head>
+<body>
+<div class="shell">
+<aside><div class="brand">大模型算法<br>面试知识库</div><div class="tagline">先举例，再讲原理</div><nav id="nav" aria-label="章节导航"></nav></aside>
+<main>
+<div class="topline"><span class="edition">2026 · 1.5 Transformer 手写与算法可视化</span><span id="progressText"></span></div>
+<div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+<section class="toolbar" aria-label="检索与复习控制">
+<div class="searchline"><label class="sr" for="search">搜索题号、概念与内容</label><input id="search" type="search" placeholder="搜索：DPO 参考模型 / 误拒 / KV cache / 题号" autocomplete="off"><button class="btn primary" id="searchBtn">搜索</button><button class="btn" id="clearBtn">清除</button></div>
+<div class="filters">
+<select id="depth" aria-label="阅读深度"><option value="intro">先看懂：例子与直觉</option><option value="full">完整阅读：含公式与追问</option></select>
+<button class="btn primary" id="beginnerBtn">新人 20 题</button>
+<select id="priority" aria-label="按优先级筛选"><option value="">全部优先级</option><option>P0</option><option>P1</option><option>P2</option></select>
+<select id="status" aria-label="按复习状态筛选"><option value="">全部复习状态</option><option value="new">未开始</option><option value="review">需复习</option><option value="done">已掌握</option></select>
+<button class="btn primary" id="transformerBtn">Transformer 手写 22 步</button><button class="btn" id="visualBtn">算法可视化</button><button class="btn primary" id="agentBtn">Agent 50 题</button><button class="btn" id="distillBtn">蒸馏 34 题</button><button class="btn" id="opdBtn">OPD / OPSD / MOPD</button><button class="btn" id="posttrainBtn">后训练进阶 8 题</button><button class="btn" id="pretrainBtn">预训练 20 题</button><button class="btn" id="coreBtn">48 道核心题</button><button class="btn" id="exportBtn">导出进度</button><button class="btn" id="importBtn">导入进度</button>
+<input id="importFile" type="file" accept=".json,application/json" hidden>
+<span class="small">离线阅读 · 无账号 · 无外部请求</span>
+</div><div id="notice" role="status" aria-live="polite"></div>
+</section>
+<div id="content"></div>
+</main></div>
+<script id="knowledge" type="application/json">__KNOWLEDGE_DATA__</script>
+__KNOWLEDGE_RECORDS__
+<script id="code-assets" type="application/json">__CODE_ASSETS__</script>
+<script>
+"use strict";
+const DB=JSON.parse(document.getElementById("knowledge").textContent);
+// The embedded local database needs no server, permissions, or cache migration.
+// Parse each record once on demand, then release its original JSON text node.
+function lazyRecord(item,key,fields){
+ let record;
+ function read(){
+  if(!record){const node=document.getElementById(key);record=JSON.parse(node.textContent);node.remove();}
+  return record;
+ }
+ for(const field of fields)Object.defineProperty(item,field,{enumerable:true,get:()=>read()[field]});
+}
+for(const q of DB.questions)lazyRecord(q,"data-q-"+q.id,["body","html"]);
+for(const d of DB.documents)lazyRecord(d,"data-doc-"+d.id,["html"]);
+const Q=Object.fromEntries(DB.questions.map(q=>[q.id,q]));
+const DOC=Object.fromEntries(DB.documents.map(d=>[d.id,d]));
+const S=Object.fromEntries(DB.sources.map(s=>[s.id,s]));
+const content=document.getElementById("content"), nav=document.getElementById("nav");
+const search=document.getElementById("search"), priority=document.getElementById("priority"), statusFilter=document.getElementById("status");
+const depth=document.getElementById("depth");
+const KEY="llm-interview-study-v1", validStates=["new","review","done"];let progress={};
+function safeProgress(data){const out={};if(!data||typeof data!=="object"||Array.isArray(data))return out;for(const[id,value]of Object.entries(data)){if(Q[id]&&value&&validStates.includes(value.state))out[id]={state:value.state,updated:typeof value.updated==="string"?value.updated:""};}return out;}
+function notice(text){document.getElementById("notice").textContent=text;}
+try{progress=safeProgress(JSON.parse(localStorage.getItem(KEY)||"{}"));}catch(e){notice("浏览器未能载入进度；仍可阅读，并用导出功能备份。");}
+try{if(localStorage.getItem("llm-study-depth")==="full")depth.value="full";}catch(e){}
+function applyDepth(){content.querySelectorAll("details.deep").forEach(d=>{d.open=depth.value==="full";if(d.open)hydrateDeep(d);});}
+depth.onchange=()=>{applyDepth();try{localStorage.setItem("llm-study-depth",depth.value);}catch(e){}};
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(progress));}catch(e){notice("当前浏览器无法保存进度，请导出 JSON 备份。");}updateProgress();}
+function updateProgress(){const done=DB.questions.filter(q=>progress[q.id]?.state==="done").length;document.getElementById("progressText").textContent="已掌握 "+done+" / "+DB.questions.length+" 题";document.getElementById("progressBar").style.width=(100*done/DB.questions.length)+"%";}
+function navButton(label,hash){const b=document.createElement("button");b.textContent=label;b.dataset.route=hash;b.onclick=()=>go(hash);nav.appendChild(b);}
+function navLabel(label){const p=document.createElement("div");p.className="navlabel";p.textContent=label;nav.appendChild(p);}
+navButton("总览","home");navButton("新人 20 题：按顺序学","beginner");
+for(const term of ["新人从这里开始","术语翻译小词表"]){const d=DB.documents.find(d=>d.path.includes(term));if(d)navButton(d.title,"doc-"+d.id);}
+navButton("Transformer 手写 22 步","transformer");navButton("算法可视化：动手验证","visuals");navButton("Agent 50 题：入门到实战","agent");navButton("蒸馏 34 题","distill");navButton("OPD / OPSD / MOPD","opd");navButton("后训练进阶 8 题","posttrain");navButton("预训练 20 题","pretrain");navButton("48 道面试核心题","core");navButton("全部题目索引","doc-index");
+navLabel("知识主线");
+for(const d of DB.documents.filter(d=>d.path.startsWith("01_")))navButton(d.title,"doc-"+d.id);
+navLabel("项目与使用");
+for(const d of DB.documents.filter(d=>d.path.startsWith("02_")||d.path.startsWith("03_")||d.path.includes("岗位地图")))navButton(d.title,"doc-"+d.id);
+navButton("一手来源与核查状态","sources");
+for(const d of DB.documents.filter(d=>d.path.includes("维护规范")||d.path.includes("新题与研究记录模板")||d.path.includes("验收记录")||d.path.includes("CHANGELOG")))navButton(d.title,"doc-"+d.id);
+function go(hash){if(["beginner","distill","opd","posttrain","pretrain","agent","agent-start","transformer","visuals"].includes(hash)){search.value="";priority.value="";statusFilter.value="";}if(location.hash==="#"+hash)route();else location.hash=hash;}
+function selectNav(hash){for(const b of nav.querySelectorAll("button"))b.classList.toggle("active",b.dataset.route===hash);}
+const questionParts=new Map(),searchText=new Map();
+function parts(q){
+ if(!questionParts.has(q.id)){
+  const marker='<details class="deep"><summary>',bodyMarker='<div class="deepbody">',ending='</div></details>';
+  const start=q.html.indexOf(marker),bodyStart=q.html.indexOf(bodyMarker,start);
+  questionParts.set(q.id,start<0||bodyStart<0?{intro:q.html,deep:""}:{intro:q.html.slice(0,start),deep:q.html.slice(bodyStart+bodyMarker.length,-ending.length)});
+ }
+ return questionParts.get(q.id);
+}
+function questionBody(q){
+ const state=progress[q.id]?.state||"new",part=parts(q);
+ return '<div class="qbody">'+part.intro+visualPanel(q.id)+(part.deep?'<details class="deep" data-id="'+q.id+'"'+(depth.value==="full"?' open':'')+'><summary>我已读懂例子，继续看公式、边界与追问</summary><div class="deepbody"></div></details>':'')+'</div><div class="qfooter"><a class="small" href="#doc-'+q.doc+'">所属章节</a><label class="small">复习状态 <select class="study" data-id="'+q.id+'" aria-label="'+q.id+' 复习状态">'+[['new','未开始'],['review','需复习'],['done','已掌握']].map(([v,t])=>'<option value="'+v+'"'+(v===state?' selected':'')+'>'+t+'</option>').join('')+'</select></label></div>';
+}
+function hydrateDeep(detail){
+ if(detail.dataset.loaded)return;
+ detail.querySelector('.deepbody').innerHTML=parts(Q[detail.dataset.id]).deep;
+ detail.dataset.loaded="true";
+}
+function hydrateQuestion(detail){
+ if(detail.dataset.loaded)return;
+ detail.insertAdjacentHTML('beforeend',questionBody(Q[detail.id.slice(2)]));
+ detail.dataset.loaded="true";
+ const deep=detail.querySelector('.deep');if(deep?.open)hydrateDeep(deep);
+}
+function card(q,open=false){return '<details class="question" id="q-'+q.id+'"'+(open?' open':'')+'><summary><span class="qid">'+q.id+'</span><span class="qtitle">'+escapeHtml(q.title)+'</span><span class="pill">'+q.priority+(q.core?' · 核心':'')+'</span></summary></details>';}
+// Capturing handles the non-bubbling native toggle event, including keyboard use.
+content.addEventListener('toggle',e=>{
+ if(!e.target.open||!content.contains(e.target))return;
+ if(e.target.matches('details.question'))hydrateQuestion(e.target);
+ else if(e.target.matches('details.deep'))hydrateDeep(e.target);
+},true);
+function filtered(items){
+ const words=search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+ return items.filter(q=>{
+  if(priority.value&&q.priority!==priority.value)return false;
+  if(statusFilter.value&&(progress[q.id]?.state||"new")!==statusFilter.value)return false;
+  if(!words.length)return true;
+  if(!searchText.has(q.id))searchText.set(q.id,(q.id+" "+q.title+" "+q.body).toLowerCase());
+  return words.every(w=>searchText.get(q.id).includes(w));
+ });
+}
+let expansion=0;
+function cancelExpansion(){
+ expansion++;
+ const button=document.getElementById('expandAll');if(button){button.disabled=false;button.textContent='展开全部';}
+ content.removeAttribute('aria-busy');
+}
+function expandQuestions(){
+ cancelExpansion();const token=expansion,button=document.getElementById('expandAll');
+ const pending=[...content.querySelectorAll('details.question')];let index=0;
+ button.disabled=true;content.setAttribute('aria-busy','true');
+ function batch(){
+  if(token!==expansion)return;
+  const start=performance.now();let count=0;
+  while(index<pending.length&&count<4&&performance.now()-start<8){
+   const detail=pending[index++];hydrateQuestion(detail);detail.open=true;count++;
+  }
+  button.textContent='展开中 '+index+' / '+pending.length;
+  if(index<pending.length)setTimeout(batch,0);
+  else cancelExpansion();
+ }
+ batch();
+}
+function renderQuestions(title,items,overview=""){
+ const list=filtered(items);
+ content.innerHTML=(overview?'<div class="article">'+overview+'</div>':'')+'<div class="sectionhead" style="margin-top:22px"><div><h2>'+escapeHtml(title)+'</h2><span class="resultcount">'+list.length+' 道题 · 点击题目展开</span></div><div><button class="btn" id="expandAll">展开全部</button> <button class="btn" id="collapseAll">收起</button></div></div>'+(list.length?list.map(q=>card(q)).join(''):'<div class="empty">没有匹配的问题。可减少关键词或清除筛选。</div>');
+ document.getElementById('expandAll').onclick=expandQuestions;
+ document.getElementById('collapseAll').onclick=()=>{cancelExpansion();content.querySelectorAll('details.question').forEach(d=>d.open=false);};
+}
+function home(){
+ const guide=DB.documents.find(d=>d.path.includes("新人从这里开始"));
+ const glossary=DB.documents.find(d=>d.path.includes("术语翻译小词表"));
+ content.innerHTML='<section class="hero"><div class="eyebrow">从一个例子开始</div><h1>先看懂一个例子，<br>再学会一个概念。</h1><p class="lede">把交叉熵讲成一次预测怎样扣分，把注意力讲成怎样从前文找信息。先建立直觉，再读面试回答；公式和深入追问，等你准备好再展开。</p><button class="btn primary" onclick="go(\'beginner\')">按顺序学新人 20 题</button> <button class="btn" onclick="go(\'q-M02\')">交叉熵与 KL，从这里讲起</button><div class="stats"><div class="stat"><strong>20</strong><span>第一轮入门题</span></div><div class="stat"><strong>'+DB.stats.question_count+'</strong><span>均配例子和白话回答</span></div><div class="stat"><strong>'+DB.stats.main_chapters+'</strong><span>完整知识章节</span></div></div></section><div class="article"><h2>不用从第一天就背 '+DB.stats.question_count+' 道题</h2><p>先完成“预测什么—怎样扣分—怎样学习—怎样办事”的理解路线。每题读完例子，试着换个数字或场景讲一次，再看一句“直答”。</p><p><a href="#doc-'+guide.id+'">查看新人学习顺序</a> · <a href="#doc-'+glossary.id+'">遇到术语，查这里</a></p><p>默认先显示例子与直觉。每题下方可展开公式、边界与追问，也可在上方切换“完整阅读”。P0/P1/P2 是岗位优先级，不代表新人理解难度。</p></div><div class="article"><h2>新增：Transformer 手写与算法可视化</h2><p>22 步逐渐写出注意力、完整架构、训练与生成；8 个可交互小实验，把矩阵乘法、因果遮罩、交叉熵/KL 和缓存的变化算给你看。</p><p><a href="#transformer">开始手写教程 →</a> · <a href="#visuals">进入算法可视化</a></p></div><div class="article"><h2>Agent 从入门到实战</h2><p>50 题串起工具调用、MCP 与 A2A、程序化执行、上下文、记忆、长期任务、训练与评测。用一个可点击的订单故事，看清“打算做、已经做、能够证明做成”的区别。</p><p><a href="#agent">打开 Agent 教程与互动演示 →</a> · <a href="#agent-start">从 12 道入门题开始</a></p></div><div class="article"><h2>蒸馏：学生自己做，老师怎样教？</h2><p>34 题从软标签讲到 OPD、OPSD、MOPD：学生在哪里练习，老师从哪里来，多个领域专家怎样整合。再看工具调用、纠错和评测。</p><p><a href="#opd">先分清 OPD 家族 →</a> · <a href="#q-KD27">OPSD：带参考解的自教师</a> · <a href="#q-KD29">MOPD：多个专家教一个学生</a></p><button class="btn primary" onclick="go(\'distill\')">开始读蒸馏专题</button></div><div class="article"><h2>预训练：一本书怎样变成训练题？</h2><p>20 题串起下一 token 预测、数据与分词、算力预算、优化和训练排错，再看 MTP、长上下文和效果评测。</p><p><a href="#pretrain">开始预训练 20 题 →</a> · <a href="#q-PT02">先看输入与答案怎样对应</a></p></div><div class="article"><h2>后训练进阶：每种新方法在改什么？</h2><p>DAPO、GSPO、SAPO、GDPO、VESPO，按奖励、概率比和采样偏移这些实际问题比较。8 题附版本、适用条件与追问。</p><p><a href="#posttrain">开始后训练进阶 →</a></p></div><div class="tracks"><button class="track" data-prefix="P,RL,SA,SFT,F,HP,KD"><b>后训练与内容安全</b><span>怎样教模型选择更好的回答</span></button><button class="track" data-prefix="R,A"><b>RAG 与 Agent</b><span>怎样查资料、调用工具、办成事情</span></button><button class="track" data-prefix="E,I,X"><b>评测与工程</b><span>怎样知道更好，怎样控制资源</span></button><button class="track" data-prefix="V"><b>多模态与驾驶交叉</b><span>怎样看图、决策并检验可靠性</span></button></div><p class="beginner-note">完成入门后，再按岗位深入或用 48 道核心题练习口述。进度保存在当前浏览器，可导出备份。技术来源核查日：'+DB.checked+'。</p>';
+ for(const b of content.querySelectorAll(".track"))b.onclick=()=>go("track-"+b.dataset.prefix);
+}
+// Offline teaching walkthrough. No model, tool, or service is called here.
+let agentWalkScenario='normal',agentWalkStep=0;
+const agentWalkCommon=[
+ {name:'读懂目标',seen:'用户希望把自己的订单数量从 1 改成 2，上限是 3。',state:'未执行',actual:'数量仍是 1',lesson:'先把目标、对象与限制写进任务状态。理解了要求，还没有改变订单。'},
+ {name:'读取事实',seen:'查到订单版本 1、数量 1，并确认当前用户可以修改。',state:'已取得证据',actual:'数量仍是 1',lesson:'读取到的版本用于稍后的提交校验；其他人可能在此期间修改订单。'},
+ {name:'形成并校验动作',seen:'拟提交数量 2，沿用订单版本 1，并分配本次操作编号。',state:'计划已校验',actual:'数量仍是 1',lesson:'参数、权限、数量上限与版本都要检查。生成合法调用参数仍不等于执行成功。'}
+];
+const agentWalkEnd={
+ normal:[
+  {name:'提交修改',seen:'工具返回本操作的成功回执。',state:'已收到提交回执',actual:'数量已变成 2；写入 1 次',lesson:'回执是执行证据，还要核对它对应哪个订单、哪个操作以及什么结果。'},
+  {name:'核验后结束',seen:'订单数量为 2，版本为 2，回执与本次操作一致。',state:'已验证完成',actual:'数量为 2；写入 1 次',lesson:'满足目标与约束后再汇报完成。继续重试不会增加价值。'}
+ ],
+ timeout:[
+  {name:'提交后回执丢失',seen:'只收到了超时，尚不知道操作是否生效。',state:'执行结果未知',actual:'后台已改成 2；写入 1 次',lesson:'这里展示后台状态是为了教学。Agent 此时没有这份证据，不能把超时理解成确定失败。'},
+  {name:'按原操作编号查证',seen:'查到原操作已提交的可靠回执，数量为 2。',state:'已验证完成',actual:'数量为 2；仍只写入 1 次',lesson:'查证原操作即可恢复结果。换新编号重复提交会破坏对同一次操作的追踪。'}
+ ],
+ unknown:[
+  {name:'提交后回执丢失',seen:'只收到了超时，尚不知道操作是否生效。',state:'执行结果未知',actual:'后台已改成 2；写入 1 次',lesson:'后台是否成功与 Agent 目前知道什么要分开记录。'},
+  {name:'查询也不可用，预算已用尽',seen:'仍没有可靠回执；保留原操作编号，等待恢复。',state:'暂停，结果仍未知',actual:'后台数量为 2；写入 1 次',lesson:'停下可以是正确选择，但要说明已尝试什么、什么还未知。不能编造成功，也不能把未知改成确定失败。'}
+ ]
+};
+function agentWalkHtml(){
+ const steps=[...agentWalkCommon,...agentWalkEnd[agentWalkScenario]],s=steps[agentWalkStep];
+ return '<div class="agent-walk-controls"><label>选择情境 <select id="agentScenario" aria-label="教学情境">'+[['normal','正常提交'],['timeout','提交成功，回执丢失'],['unknown','回执查询也失败']].map(([v,t])=>'<option value="'+v+'"'+(v===agentWalkScenario?' selected':'')+'>'+t+'</option>').join('')+'</select></label><span class="small">第 '+(agentWalkStep+1)+' / '+steps.length+' 步</span></div><ol class="agent-steps">'+steps.map((x,i)=>'<li'+(i===agentWalkStep?' class="active" aria-current="step"':'')+'>'+escapeHtml(x.name)+'</li>').join('')+'</ol><div class="agent-walk-state" aria-live="polite"><h3>'+escapeHtml(s.name)+'</h3><p><b>Agent 看到了：</b>'+escapeHtml(s.seen)+'</p><div class="agent-state-grid"><p><b>应记录的状态</b><br>'+escapeHtml(s.state)+'</p><p><b>后台实际情况（教学视角）</b><br>'+escapeHtml(s.actual)+'</p></div><p class="agent-lesson">'+escapeHtml(s.lesson)+'</p></div><div class="agent-walk-controls"><button class="btn" id="agentPrev"'+(agentWalkStep===0?' disabled':'')+'>上一步</button><button class="btn primary" id="agentNext"'+(agentWalkStep===steps.length-1?' disabled':'')+'>看下一步</button><button class="btn" id="agentRestart">重新演示</button></div>';
+}
+function initAgentWalk(){
+ const box=document.getElementById('agentWalk');if(!box)return;
+ box.innerHTML=agentWalkHtml();
+ document.getElementById('agentScenario').onchange=e=>{agentWalkScenario=e.target.value;agentWalkStep=0;initAgentWalk();};
+ document.getElementById('agentPrev').onclick=()=>{agentWalkStep=Math.max(0,agentWalkStep-1);initAgentWalk();};
+ document.getElementById('agentNext').onclick=()=>{agentWalkStep=Math.min(4,agentWalkStep+1);initAgentWalk();};
+ document.getElementById('agentRestart').onclick=()=>{agentWalkStep=0;initAgentWalk();};
+}
+function agentOverview(){return '<h1>Agent 50 题：从一次调用，到稳定办事</h1><p>先读懂一次执行，再学工具协议、上下文与记忆、长期任务和训练评测。14 道基础题 + 36 道进阶实战题，仍然先讲例子、再展开追问。</p><p><a href="#agent-start">按顺序学入门 12 题 →</a> · <a href="#q-AG05">MCP 2026 版</a> · <a href="#q-AG07">程序化工具调用</a> · <a href="#q-AG25">Agent 训练从这里开始</a></p><h2>先走一遍：让订单真的改对</h2><p class="small">离线教学模拟，演示状态与证据的区别；不会调用模型或修改订单。配套 CPU 实验可在“Agent 可靠性小实验”中独立运行。</p><section id="agentWalk" class="agent-walk" aria-label="订单 Agent 执行教学"></section><h2>按问题选择学习模块</h2><table><thead><tr><th>想弄清什么</th><th>先读哪里</th></tr></thead><tbody><tr><td>怎样办事，怎么知道办成了</td><td>A01—A14</td></tr><tr><td>系统、工具协议、执行与规划</td><td>AG01—AG12</td></tr><tr><td>上下文、记忆、技能与长期任务</td><td>AG13—AG24</td></tr><tr><td>Agent 训练、评测与项目证据</td><td>AG25—AG36</td></tr></tbody></table>';}
+
+__VISUAL_JS__
+function sources(id){const subset=id&&S[id]?[S[id]]:DB.sources;content.innerHTML='<div class="article"><h1>一手来源与核查</h1><p class="muted">可达性、方法依据、会议接收和复现是不同证据等级。点击原始来源将联网打开；本地阅读不会自动联网。</p>'+subset.map(s=>'<section class="source" id="source-'+s.id+'"><h3><span class="qid">'+s.id+'</span> '+escapeHtml(s.title)+'</h3><p>'+escapeHtml(s.scope)+'</p><p class="small">'+escapeHtml(s.checked_on+" · "+s.status)+'</p><a href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer">打开一手来源 ↗</a></section>').join('')+'</div>';}
+function route(){cancelExpansion();const hash=decodeURIComponent(location.hash.slice(1)||"home");selectNav(hash);if(hash.startsWith("q-")&&Q[hash.slice(2)]){const q=Q[hash.slice(2)];content.innerHTML='<div class="sectionhead"><h2>题目 '+q.id+'</h2><a href="#doc-'+q.doc+'">返回章节</a></div>'+card(q,true);hydrateQuestion(document.getElementById('q-'+q.id));}
+else if(hash.startsWith("source-"))sources(hash.slice(7));
+else if(hash==="transformer")renderQuestions("Transformer 架构手写 22 步",DB.questions.filter(q=>/^TH\d{2}$/.test(q.id)),transformerOverview());
+else if(hash==="visuals"||hash.startsWith("viz-"))visualizationPage(hash.startsWith("viz-")?hash.slice(4):"attention");
+else if(hash==="sources")sources();
+else if(hash.startsWith("doc-")&&DOC[hash.slice(4)]){const d=DOC[hash.slice(4)];if(d.questions.length)renderQuestions(d.title,d.questions.map(id=>Q[id]),d.html);else content.innerHTML='<article class="article">'+d.html+'</article>';}
+else if(hash==="beginner")renderQuestions("新人 20 题：按顺序读，先不背公式",DB.beginner.map(id=>Q[id]),'<h2>先跟着例子走</h2><p>顺序从概率、扣分和训练，到注意力、微调、偏好、评测与工具。每次学几题即可；能换个例子解释，再继续。</p>');
+else if(hash==="distill"){const d=DB.documents.find(d=>d.path.startsWith("01_")&&d.questions.includes("KD01"));renderQuestions("Agent 蒸馏：从示范到独立做事",d.questions.map(id=>Q[id]),d.html);}
+else if(hash==="opd")renderQuestions("OPD 家族：先分清谁做、谁教、怎样学",DB.questions.filter(q=>/^KD(2[5-9]|3[0-4])$/.test(q.id)),'<h2>先读这四题</h2><p><a href="#q-KD25">KD25 · OPD 是什么</a> → <a href="#q-KD27">KD27 · OPSD 的自教师</a> → <a href="#q-KD29">KD29 · MOPD 的多教师</a> → <a href="#q-KD34">KD34 · 一页对照</a></p><p>再按需要深入逐 token 更新、环境反馈、熵控制与自一致伪答案。默认先看例子，公式在每题下方展开。</p>');
+else if(hash==="posttrain"||hash==="pretrain"){const first=hash==="pretrain"?"PT01":"HP01";const d=DB.documents.find(d=>d.questions.includes(first));renderQuestions(d.title,d.questions.map(id=>Q[id]),d.html);}
+else if(hash==="agent")renderQuestions("Agent 全部 50 题",DB.questions.filter(q=>/^A(?:G)?\d{2}$/.test(q.id)),agentOverview());
+else if(hash==="agent-start")renderQuestions("Agent 入门 12 题：先看懂一次执行",["A01","AG01","A02","AG03","AG04","A04","A05","AG05","AG13","A09","AG25","A07"].map(id=>Q[id]),'<h2>按这个顺序走</h2><p>先理解模型怎样提出动作、程序怎样执行，再理解信息怎样进入上下文，最后认识训练和终态评测。先读例子，能用自己的话说明，再展开深读。</p><p><a href="#agent">返回 Agent 50 题与互动演示</a></p>');
+else if(hash==="core")renderQuestions("48 道口述核心题",DB.core.map(id=>Q[id]));
+else if(hash==="search")renderQuestions("检索结果",DB.questions);
+else if(hash.startsWith("track-")){const prefixes=hash.slice(6).split(",");renderQuestions("岗位定向复习",DB.questions.filter(q=>prefixes.includes(q.id.replace(/\d/g,""))));}
+else home();applyDepth();initAgentWalk();updateProgress();window.scrollTo({top:0,behavior:"instant"});}
+content.addEventListener("change",e=>{if(e.target.matches(".study")){progress[e.target.dataset.id]={state:e.target.value,updated:new Date().toISOString()};persist();}});
+document.getElementById("transformerBtn").onclick=()=>go("transformer");
+document.getElementById("visualBtn").onclick=()=>go("visuals");
+document.getElementById("agentBtn").onclick=()=>go("agent");
+document.getElementById("beginnerBtn").onclick=()=>go("beginner");
+document.getElementById("distillBtn").onclick=()=>go("distill");
+for(const name of ["opd","posttrain","pretrain"])document.getElementById(name+"Btn").onclick=()=>go(name);
+document.getElementById("searchBtn").onclick=()=>go("search");
+search.addEventListener("keydown",e=>{if(e.key==="Enter")go("search");});
+priority.onchange=()=>go("search");statusFilter.onchange=()=>go("search");
+document.getElementById("clearBtn").onclick=()=>{search.value="";priority.value="";statusFilter.value="";notice("");route();};
+document.getElementById("coreBtn").onclick=()=>{search.value="";priority.value="";statusFilter.value="";go("core");};
+document.getElementById("exportBtn").onclick=()=>{const data={schema:"llm-study-progress-v1",exported:new Date().toISOString(),progress};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="大模型八股_复习进度.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);notice("已导出进度；JSON 文件可以在另一个浏览器导入。");};
+document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
+document.getElementById("importFile").onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>2000000)throw new Error("文件过大");const data=JSON.parse(await file.text());if(data.schema!=="llm-study-progress-v1"||!data.progress)throw new Error("格式不匹配");const incoming=safeProgress(data.progress);progress={...progress,...incoming};persist();route();notice("已导入 "+Object.keys(incoming).length+" 道题的进度。");}catch(err){notice("未导入："+err.message+"。请选择本阅读器导出的 JSON。");}e.target.value="";};
+// Printing must include deferred bodies and preserve the user's open/closed state.
+let printState=null;
+window.addEventListener('beforeprint',()=>{
+ cancelExpansion();content.querySelectorAll('details.question').forEach(hydrateQuestion);
+ content.querySelectorAll('details.deep').forEach(hydrateDeep);
+ content.querySelectorAll('.viz-panel').forEach(panel=>mountVisual(panel.querySelector('.viz-host'),panel.dataset.viz));
+ if(!printState)printState=[...content.querySelectorAll('details')].map(detail=>[detail,detail.open]);
+ printState.forEach(([detail])=>detail.open=true);
+});
+window.addEventListener('afterprint',()=>{
+ if(printState)printState.forEach(([detail,open])=>{if(content.contains(detail))detail.open=open;});
+ printState=null;
+});
+window.addEventListener("hashchange",route);route();
+</script>
+</body></html>

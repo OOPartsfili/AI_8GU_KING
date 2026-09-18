@@ -1,0 +1,160 @@
+{
+  "version": "1.4",
+  "test_counts": [
+    18,
+    5,
+    5,
+    7,
+    8
+  ],
+  "total_passed": 43,
+  "agent_tests_passed": 8,
+  "rollout_example": {
+    "per_attempt_mean": 0.5,
+    "incorrect_per_segment_mean": 0.75
+  },
+  "demonstration": {
+    "scope": "纯 CPU、内存中的确定性订单模拟；无网络、无模型调用、无真实订单写入。",
+    "comparison": "baseline 是人为构造的薄弱规则，不是被测大模型；不报告 LLM 成功率。",
+    "assumptions": [
+      "单进程原子提交",
+      "可见回执查询具有强一致性",
+      "权限预先由环境配置",
+      "预算只计算工具调用次数"
+    ],
+    "scenarios": [
+      {
+        "scenario": "计划不等于执行",
+        "baseline": {
+          "checks_only": "已生成改单计划",
+          "declares_success": true
+        },
+        "guarded": {
+          "actual_success": false,
+          "writes": 0
+        }
+      },
+      {
+        "scenario": "JSON 合法仍须检查业务条件",
+        "baseline": {
+          "json_parseable": true
+        },
+        "guarded": {
+          "blocked": {
+            "非法参数": "invalid_quantity",
+            "越权": "not_authorized",
+            "版本过期": "version_conflict"
+          },
+          "writes": 0
+        }
+      },
+      {
+        "scenario": "超时前后提交情况不同",
+        "baseline": {
+          "treats_timeout_as": "确定失败"
+        },
+        "guarded": {
+          "before_commit": {
+            "outcome": "committed",
+            "operation_id": "op-demo-1",
+            "calls": 3,
+            "receipt": {
+              "operation_id": "op-demo-1",
+              "quantity": 2,
+              "version": 2
+            },
+            "writes": 1
+          },
+          "after_commit": {
+            "outcome": "committed",
+            "operation_id": "op-demo-1",
+            "calls": 2,
+            "receipt": {
+              "operation_id": "op-demo-1",
+              "quantity": 2,
+              "version": 2
+            },
+            "writes": 1
+          }
+        }
+      },
+      {
+        "scenario": "查不到可靠回执时保留未知并恢复",
+        "baseline": {
+          "new_request_id_retry_risk": "丢失原请求身份"
+        },
+        "guarded": {
+          "first": {
+            "outcome": "unknown",
+            "operation_id": "op-demo-1",
+            "calls": 2
+          },
+          "resume_same_operation": {
+            "outcome": "committed",
+            "operation_id": "op-demo-1",
+            "calls": 1,
+            "receipt": {
+              "operation_id": "op-demo-1",
+              "quantity": 2,
+              "version": 2
+            }
+          },
+          "writes": 1
+        }
+      },
+      {
+        "scenario": "压缩后仍保留数量上限",
+        "baseline": {
+          "summary": "请将订单数量改成 4",
+          "lost_max_quantity": true
+        },
+        "guarded": {
+          "max_quantity": 3,
+          "outcome": "rejected",
+          "operation_id": "op-demo-1",
+          "calls": 0,
+          "reason": "task_quantity_constraint",
+          "writes": 0
+        }
+      },
+      {
+        "scenario": "记忆同时按用户与有效期过滤",
+        "baseline": {
+          "returned": [
+            "当前配送偏好",
+            "已过期配送偏好",
+            "其他用户配送偏好"
+          ]
+        },
+        "guarded": {
+          "returned": [
+            "当前配送偏好"
+          ]
+        }
+      },
+      {
+        "scenario": "预算用尽时停止且不伪报失败",
+        "baseline": {
+          "retry_policy": "无限重试"
+        },
+        "guarded": {
+          "outcome": "unknown",
+          "operation_id": "op-demo-1",
+          "calls": 1,
+          "writes": 1
+        }
+      },
+      {
+        "scenario": "按真实终态评测",
+        "baseline": {
+          "text_contains_success": true
+        },
+        "guarded": {
+          "claim_without_execution": false,
+          "executed_without_success_word": true
+        }
+      }
+    ]
+  },
+  "scope": "Actual CPU checks; simulated baseline, no LLM success-rate claims."
+}

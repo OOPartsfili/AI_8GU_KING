@@ -1,0 +1,88 @@
+{
+  "method": "Headless Edge, 1440×1080, fresh context for each run, 4× CPU slowdown, median of 5 runs; route includes synchronous layout and two animation frames. Not a disk cold-cache measurement.",
+  "results": {
+    "before": {
+      "bytes": 1533080,
+      "load_ms": 698,
+      "routes": {
+        "all": {
+          "sync_ms": 656.5,
+          "paint_ms": 780.5,
+          "nodes": 12901,
+          "questions": 319,
+          "body_nodes": 8747
+        },
+        "agent": {
+          "sync_ms": 173.8999999994412,
+          "paint_ms": 192.5,
+          "nodes": 1784,
+          "questions": 50,
+          "body_nodes": 1068
+        },
+        "core": {
+          "sync_ms": 58.299999999813735,
+          "paint_ms": 91.5,
+          "nodes": 2714,
+          "questions": 48,
+          "body_nodes": 2083
+        },
+        "search": {
+          "sync_ms": 220.79999999981374,
+          "paint_ms": 265.29999999981374,
+          "nodes": 9516,
+          "questions": 232,
+          "body_nodes": 6493
+        },
+        "question": {
+          "sync_ms": 241.3999999994412,
+          "paint_ms": 252.09999999962747,
+          "nodes": 226,
+          "questions": 1,
+          "body_nodes": 210
+        }
+      }
+    },
+    "after": {
+      "bytes": 1406671,
+      "load_ms": 673.1000000005588,
+      "routes": {
+        "all": {
+          "sync_ms": 52.90000000037253,
+          "paint_ms": 206.3999999994412,
+          "nodes": 1602,
+          "questions": 319,
+          "body_nodes": 0
+        },
+        "agent": {
+          "sync_ms": 127.3999999994412,
+          "paint_ms": 181.80000000074506,
+          "nodes": 316,
+          "questions": 50,
+          "body_nodes": 0
+        },
+        "core": {
+          "sync_ms": 15.299999999813735,
+          "paint_ms": 72,
+          "nodes": 247,
+          "questions": 48,
+          "body_nodes": 0
+        },
+        "search": {
+          "sync_ms": 54.19999999925494,
+          "paint_ms": 99.79999999981374,
+          "nodes": 1167,
+          "questions": 232,
+          "body_nodes": 0
+        },
+        "question": {
+          "sync_ms": 279.6000000005588,
+          "paint_ms": 288.70000000018626,
+          "nodes": 171,
+          "questions": 1,
+          "body_nodes": 155
+        }
+      }
+    }
+  },
+  "question_content_identical": true
+}

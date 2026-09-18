@@ -1,0 +1,3994 @@
+[
+  {
+    "id": "M01",
+    "title": "语言模型到底在学什么？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "M02",
+    "title": "交叉熵、KL、最大似然是什么关系？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": true,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "M03",
+    "title": "前向 KL 与反向 KL 为什么表现不同？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S19"
+    ]
+  },
+  {
+    "id": "M04",
+    "title": "softmax 为什么要减去最大值？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "M05",
+    "title": "交叉熵对 logits 的梯度为什么是 p−y？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": true,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "M06",
+    "title": "困惑度 PPL 是什么，为什么不能跨 tokenizer 乱比？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "M07",
+    "title": "Adam、AdamW 与学习率怎么解释？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": true,
+    "sources": [
+      "S55"
+    ]
+  },
+  {
+    "id": "M08",
+    "title": "梯度裁剪、梯度累积与大 batch 有什么差别？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "M09",
+    "title": "熵、温度和多样性是一回事吗？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "M10",
+    "title": "MLE、MAP 与正则化有什么关系？",
+    "priority": "P1",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "M11",
+    "title": "重要性采样与 on-policy/off-policy 是什么？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S11",
+      "S12"
+    ]
+  },
+  {
+    "id": "M12",
+    "title": "偏差、方差、置信区间分别回答什么？",
+    "priority": "P0",
+    "doc": "d9cbef88031",
+    "path": "01_知识主线/01_数学概率与优化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "T01",
+    "title": "Self-Attention 的 Q、K、V 是什么？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "T02",
+    "title": "为什么除以 √d_k？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "T03",
+    "title": "多头注意力解决什么问题？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "T04",
+    "title": "MHA、MQA、GQA 怎么比较？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": "T05",
+    "title": "因果 mask、padding mask、loss mask 有何区别？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "T06",
+    "title": "RoPE 为什么有相对位置信息？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S02"
+    ]
+  },
+  {
+    "id": "T07",
+    "title": "LayerNorm、RMSNorm 与 Pre-Norm 怎么讲？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S56"
+    ]
+  },
+  {
+    "id": "T08",
+    "title": "FFN、SwiGLU 与残差分别做什么？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S57"
+    ]
+  },
+  {
+    "id": "T09",
+    "title": "BPE、WordPiece、Unigram 与字符 n-gram 怎么区分？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S58"
+    ]
+  },
+  {
+    "id": "T10",
+    "title": "Encoder-only、Decoder-only、Encoder-decoder 怎么选？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S59"
+    ]
+  },
+  {
+    "id": "T11",
+    "title": "MoE 的总参数与激活参数有什么区别？",
+    "priority": "P1",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S60"
+    ]
+  },
+  {
+    "id": "T12",
+    "title": "长上下文、滑窗、线性注意力各解决什么？",
+    "priority": "P1",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S04",
+      "S33"
+    ]
+  },
+  {
+    "id": "T13",
+    "title": "参数量和 attention 复杂度怎么估算？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "T14",
+    "title": "FlashAttention 为什么“精确”却更省显存？",
+    "priority": "P0",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S04",
+      "S34",
+      "S37"
+    ]
+  },
+  {
+    "id": "T15",
+    "title": "MLA 为什么可以压缩 KV cache？",
+    "priority": "P1",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48"
+    ]
+  },
+  {
+    "id": "T16",
+    "title": "MoE 怎么避免某些专家过忙？",
+    "priority": "P1",
+    "doc": "d88ba90b9b5",
+    "path": "01_知识主线/02_Transformer与分词.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S60"
+    ]
+  },
+  {
+    "id": "D01",
+    "title": "预训练、继续预训练、SFT、对齐分别改变什么？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D02",
+    "title": "Scaling law 与 Chinchilla 怎么回答？",
+    "priority": "P1",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "D03",
+    "title": "“高质量数据”如何操作化？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D04",
+    "title": "精确去重、近似去重与泄漏检查怎么区分？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D05",
+    "title": "数据配比怎么调？",
+    "priority": "P1",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D06",
+    "title": "Packing 为什么提速，又有哪些坑？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D07",
+    "title": "合成数据与自训练如何避免错误放大？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D08",
+    "title": "数据污染如何让模型选择过程作弊？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D09",
+    "title": "灾难性遗忘如何识别与缓解？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "D10",
+    "title": "怎么证明收益来自算法？",
+    "priority": "P0",
+    "doc": "db62786f5ba",
+    "path": "01_知识主线/03_预训练与数据治理.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT01",
+    "title": "SFT 的目标和训练样本长什么样？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": true,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "SFT02",
+    "title": "全参微调、LoRA、Prompt Tuning 怎么选？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "SFT03",
+    "title": "LoRA 的公式、参数量与初始化怎么推？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "SFT04",
+    "title": "LoRA rank、alpha、作用层如何调？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "SFT05",
+    "title": "LoRA 合并后为什么通常不增加推理分支？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "SFT06",
+    "title": "QLoRA 是“用 4 bit 训练全部参数”吗？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S07"
+    ]
+  },
+  {
+    "id": "SFT07",
+    "title": "训练 loss 不下降，按什么顺序排查？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT08",
+    "title": "loss 很好，但生成乱码或不停重复怎么办？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT09",
+    "title": "为什么训练要看 token 数和长度分布？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT10",
+    "title": "怎么选择 checkpoint 和早停指标？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT11",
+    "title": "SFT 能否替代偏好优化？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SFT12",
+    "title": "训练运行记录最低需要什么？",
+    "priority": "P0",
+    "doc": "d367e6a9c30",
+    "path": "01_知识主线/04_SFT与参数高效微调.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "P01",
+    "title": "RLHF、奖励模型与偏好优化是什么关系？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": true,
+    "sources": [
+      "S08",
+      "S11"
+    ]
+  },
+  {
+    "id": "P02",
+    "title": "为什么偏好对必须是同一个问题？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "P03",
+    "title": "DPO 是怎么从 KL 约束目标推出来的？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "P04",
+    "title": "DPO 损失怎么写，为什么 Z 消失？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "P05",
+    "title": "DPO 梯度在推动什么？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "P06",
+    "title": "DPO 的参考模型究竟有什么用？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S08",
+      "S51"
+    ]
+  },
+  {
+    "id": "P07",
+    "title": "DPO 的 β 为什么不能凭一个口诀调？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "P08",
+    "title": "SimPO 的完整公式是什么？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": "P09",
+    "title": "用小算例比较 DPO 与 SimPO",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S08",
+      "S09"
+    ]
+  },
+  {
+    "id": "P10",
+    "title": "KTO 适合什么反馈，和分类器有什么区别？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S10"
+    ]
+  },
+  {
+    "id": "P11",
+    "title": "DPO、SimPO、KTO、PPO/GRPO 怎么选？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13"
+    ]
+  },
+  {
+    "id": "P12",
+    "title": "如何构造有价值的 rejected？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "P13",
+    "title": "离线 DPO 为什么仍有分布偏移？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S08",
+      "S09"
+    ]
+  },
+  {
+    "id": "P14",
+    "title": "偏好优化要监控哪些指标？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "P15",
+    "title": "带噪偏好和平局怎么处理？",
+    "priority": "P1",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "P16",
+    "title": "面试官说“DPO 只是分类”，怎么回应？",
+    "priority": "P1",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "P17",
+    "title": "KTO 的损失与参考点具体是什么？",
+    "priority": "P1",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S10"
+    ]
+  },
+  {
+    "id": "P18",
+    "title": "显式奖励模型如何训练和验证？",
+    "priority": "P0",
+    "doc": "d266d2b4246",
+    "path": "01_知识主线/05_偏好优化DPO_KTO_SimPO.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S08",
+      "S52"
+    ]
+  },
+  {
+    "id": "RL01",
+    "title": "语言生成怎么建模为强化学习？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": true,
+    "sources": [
+      "S11",
+      "S12",
+      "S13"
+    ]
+  },
+  {
+    "id": "RL02",
+    "title": "策略梯度为什么用 log π？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "RL03",
+    "title": "PPO 的 actor、critic、reward、reference 是什么？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S11"
+    ]
+  },
+  {
+    "id": "RL04",
+    "title": "PPO clip 目标如何解释正负优势？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S11"
+    ]
+  },
+  {
+    "id": "RL05",
+    "title": "GAE 是什么，λ 在折中什么？",
+    "priority": "P1",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S12",
+      "S61"
+    ]
+  },
+  {
+    "id": "RL06",
+    "title": "GRPO 最核心的变化是什么？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S12"
+    ]
+  },
+  {
+    "id": "RL07",
+    "title": "GRPO 完整目标怎么写？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S12",
+      "S16"
+    ]
+  },
+  {
+    "id": "RL08",
+    "title": "组内奖励全相同会怎样？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S12",
+      "S16"
+    ]
+  },
+  {
+    "id": "RL09",
+    "title": "奖励标准差归一化有什么副作用？",
+    "priority": "P1",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S15",
+      "S16"
+    ]
+  },
+  {
+    "id": "RL10",
+    "title": "GRPO、DAPO、Dr. GRPO 的归一化差在哪里？",
+    "priority": "P1",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S14",
+      "S15",
+      "S16"
+    ]
+  },
+  {
+    "id": "RL11",
+    "title": "KL 的采样估计为什么可能出现负数？",
+    "priority": "P1",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S12",
+      "S16"
+    ]
+  },
+  {
+    "id": "RL12",
+    "title": "RLVR 与 reward hacking 是什么？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S13"
+    ]
+  },
+  {
+    "id": "RL13",
+    "title": "过程奖励与结果奖励怎么选？",
+    "priority": "P1",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S17"
+    ]
+  },
+  {
+    "id": "RL14",
+    "title": "RL 训练不稳定时先看什么？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "RL15",
+    "title": "在线 RL 的真正成本在哪里？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "RL16",
+    "title": "R1、GRPO、推理链的关系如何讲得准确？",
+    "priority": "P0",
+    "doc": "d017e6eab95",
+    "path": "01_知识主线/06_PPO_GRPO与可验证奖励.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S13"
+    ]
+  },
+  {
+    "id": "F01",
+    "title": "CoT、Self-Consistency、Best-of-N 有何区别？",
+    "priority": "P0",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S17",
+      "S62"
+    ]
+  },
+  {
+    "id": "F02",
+    "title": "推理时计算为什么要按难度分配？",
+    "priority": "P0",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S17"
+    ]
+  },
+  {
+    "id": "F03",
+    "title": "离线蒸馏、on-policy 蒸馏、自蒸馏怎么分？",
+    "priority": "P0",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18"
+    ]
+  },
+  {
+    "id": "F04",
+    "title": "Entropy-Aware On-Policy Distillation 新在哪里？",
+    "priority": "P1",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S19"
+    ]
+  },
+  {
+    "id": "F05",
+    "title": "RL 是扩展能力还是重新分配概率？",
+    "priority": "P1",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S63",
+      "S64"
+    ]
+  },
+  {
+    "id": "F06",
+    "title": "验证器为什么可能成为新的瓶颈？",
+    "priority": "P0",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "F07",
+    "title": "测试时学习与上下文学习是一回事吗？",
+    "priority": "P1",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S33"
+    ]
+  },
+  {
+    "id": "F08",
+    "title": "扩散语言模型与自回归模型有何区别？",
+    "priority": "P2",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S49",
+      "S65"
+    ]
+  },
+  {
+    "id": "F09",
+    "title": "2026 Agent RL 值得关注什么工程问题？",
+    "priority": "P1",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S66"
+    ]
+  },
+  {
+    "id": "F10",
+    "title": "如何讲一篇新论文而不显得只追热点？",
+    "priority": "P0",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "F11",
+    "title": "IGPO 为什么利用局部补全来引导探索？",
+    "priority": "P2",
+    "doc": "d0c999090c7",
+    "path": "01_知识主线/07_推理计算蒸馏与前沿.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S65"
+    ]
+  },
+  {
+    "id": "SA01",
+    "title": "内容分类、生成安全、拒答检测怎么区分？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S23"
+    ]
+  },
+  {
+    "id": "SA02",
+    "title": "漏放与误拒为什么要联合评估？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S22"
+    ]
+  },
+  {
+    "id": "SA03",
+    "title": "多标签体系如何设计？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA04",
+    "title": "中文同音、拼音、字符变体怎么处理？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA05",
+    "title": "为什么多轮安全比单轮难？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S24"
+    ]
+  },
+  {
+    "id": "SA06",
+    "title": "越狱攻击成功率应该怎样定义？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S20",
+      "S21"
+    ]
+  },
+  {
+    "id": "SA07",
+    "title": "如何建立安全评测数据的三层结构？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA08",
+    "title": "安全偏好数据的 chosen 应该是什么？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA09",
+    "title": "安全分类器的三段决策怎么做？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA10",
+    "title": "提示注入与普通有害请求有什么不同？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S32"
+    ]
+  },
+  {
+    "id": "SA11",
+    "title": "怎么评估安全能力的分布漂移？",
+    "priority": "P1",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "SA12",
+    "title": "“精确率 79%→96%”面试怎么讲可信？",
+    "priority": "P0",
+    "doc": "dc6af0fe838",
+    "path": "01_知识主线/08_内容安全与红队.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E01",
+    "title": "Precision、Recall、F1 怎么解释？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S72"
+    ]
+  },
+  {
+    "id": "E02",
+    "title": "Macro、Micro、Weighted F1 该看哪个？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E03",
+    "title": "ROC-AUC、PR-AUC 与固定阈值表现怎么区分？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E04",
+    "title": "模型置信度如何校准？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S54"
+    ]
+  },
+  {
+    "id": "E05",
+    "title": "两个模型差 1 个百分点显著吗？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E06",
+    "title": "多 seed、bootstrap 与重复生成分别测什么？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E07",
+    "title": "pass@k 是什么，怎么估计？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S53"
+    ]
+  },
+  {
+    "id": "E08",
+    "title": "pass@k 与 τ-bench 的 pass^k 有什么不同？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S31",
+      "S53"
+    ]
+  },
+  {
+    "id": "E09",
+    "title": "LLM-as-a-Judge 怎么校准？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S52"
+    ]
+  },
+  {
+    "id": "E10",
+    "title": "消融实验如何避免“拆坏了当然更差”？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E11",
+    "title": "如何搭建离线到线上评测闭环？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E12",
+    "title": "怎么做错误归因而不是堆失败案例？",
+    "priority": "P0",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E13",
+    "title": "A/B 测试最容易忽略哪些条件？",
+    "priority": "P1",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "E14",
+    "title": "Benchmark 污染与“刷榜”如何识别？",
+    "priority": "P1",
+    "doc": "d29cdb81558",
+    "path": "01_知识主线/09_评测统计与实验设计.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R01",
+    "title": "RAG、长上下文、微调和工具怎么选？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": true,
+    "sources": [
+      "S25"
+    ]
+  },
+  {
+    "id": "R02",
+    "title": "完整 RAG 链路包含什么？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R03",
+    "title": "Chunk size 和 overlap 怎么选？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R04",
+    "title": "稀疏检索、稠密检索为什么互补？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S26",
+      "S67"
+    ]
+  },
+  {
+    "id": "R05",
+    "title": "RRF 如何融合多个检索结果？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S68"
+    ]
+  },
+  {
+    "id": "R06",
+    "title": "Bi-encoder 与 Cross-encoder 如何分工？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S26",
+      "S69"
+    ]
+  },
+  {
+    "id": "R07",
+    "title": "Embedding 的对比学习与难负例怎么讲？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S26"
+    ]
+  },
+  {
+    "id": "R08",
+    "title": "Recall@k、MRR、NDCG 怎么选择？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S67"
+    ]
+  },
+  {
+    "id": "R09",
+    "title": "三知识库路由如何设计和评测？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R10",
+    "title": "查询改写、HyDE、多跳检索有什么风险？",
+    "priority": "P1",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S70"
+    ]
+  },
+  {
+    "id": "R11",
+    "title": "Faithfulness、正确性、完整性、引用精度怎么区分？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S29"
+    ]
+  },
+  {
+    "id": "R12",
+    "title": "证据冲突、缺失、过期时怎么回答？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R13",
+    "title": "Self-RAG、RAPTOR、GraphRAG 各有什么价值？",
+    "priority": "P1",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S27",
+      "S28",
+      "S71"
+    ]
+  },
+  {
+    "id": "R14",
+    "title": "RAG 变差如何快速归因？",
+    "priority": "P0",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "R15",
+    "title": "向量库为什么常用 ANN，HNSW 怎么取舍？",
+    "priority": "P1",
+    "doc": "d234c4e82f0",
+    "path": "01_知识主线/10_RAG与知识工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S78"
+    ]
+  },
+  {
+    "id": "A01",
+    "title": "Workflow 和 Agent 的区别是什么？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": true,
+    "sources": []
+  },
+  {
+    "id": "A02",
+    "title": "ReAct 为什么把推理和动作交替？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S30"
+    ]
+  },
+  {
+    "id": "A03",
+    "title": "工具调用的 JSON 正确就算成功吗？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A04",
+    "title": "Agent 的状态应该记录什么？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A05",
+    "title": "工具超时与失败如何恢复？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A06",
+    "title": "幂等、事务与回滚为什么是 Agent 面试题？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A07",
+    "title": "Agent 任务成功率怎么定义？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S31"
+    ]
+  },
+  {
+    "id": "A08",
+    "title": "为什么 Agent 需要多次运行评测？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S31"
+    ]
+  },
+  {
+    "id": "A09",
+    "title": "记忆与长上下文的本质差别是什么？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S33"
+    ]
+  },
+  {
+    "id": "A10",
+    "title": "选择性遗忘怎么测？",
+    "priority": "P1",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S33"
+    ]
+  },
+  {
+    "id": "A11",
+    "title": "提示注入防御应该放在哪里？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S32"
+    ]
+  },
+  {
+    "id": "A12",
+    "title": "多 Agent 什么时候值得用？",
+    "priority": "P1",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A13",
+    "title": "上下文压缩如何避免丢失关键事实？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "A14",
+    "title": "LangGraph 项目应该拿出哪些证据？",
+    "priority": "P0",
+    "doc": "d9213d3c61b",
+    "path": "01_知识主线/11_Agent工具记忆与可靠性.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "I01",
+    "title": "Prefill 和 Decode 为什么性能特征不同？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S34"
+    ]
+  },
+  {
+    "id": "I02",
+    "title": "KV cache 存什么，为什么不缓存 Q？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S34"
+    ]
+  },
+  {
+    "id": "I03",
+    "title": "KV cache 显存如何手算？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S03",
+      "S34"
+    ]
+  },
+  {
+    "id": "I04",
+    "title": "模型权重、训练与推理显存怎么估算？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S35"
+    ]
+  },
+  {
+    "id": "I05",
+    "title": "PagedAttention 解决什么问题？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S34"
+    ]
+  },
+  {
+    "id": "I06",
+    "title": "连续批处理与传统 batching 差别？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "I07",
+    "title": "Prefix caching 什么时候有效，何时失效？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S50"
+    ]
+  },
+  {
+    "id": "I08",
+    "title": "Speculative decoding 为什么能保持分布？",
+    "priority": "P1",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S36"
+    ]
+  },
+  {
+    "id": "I09",
+    "title": "Temperature、top-k、top-p 怎么选？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "I10",
+    "title": "TTFT、TPOT、吞吐与 p95 如何解释？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": true,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "I11",
+    "title": "吞吐提高后为什么总成本可能更高？",
+    "priority": "P1",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "I12",
+    "title": "性能问题应该怎样定位？",
+    "priority": "P0",
+    "doc": "d0f11467db8",
+    "path": "01_知识主线/12_推理部署与性能.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X01",
+    "title": "DP、TP、PP、EP 分别拆什么？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X02",
+    "title": "ZeRO 1/2/3 各自分片什么？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S35"
+    ]
+  },
+  {
+    "id": "X03",
+    "title": "Activation checkpointing 与 offload 区别？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X04",
+    "title": "BF16、FP16、FP32 为什么需要区分？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X05",
+    "title": "PTQ、QAT、weight-only quantization 怎么分？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X06",
+    "title": "GPTQ 与 AWQ 核心思路是什么？",
+    "priority": "P1",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S38",
+      "S39"
+    ]
+  },
+  {
+    "id": "X07",
+    "title": "分布式 loss 如何避免变长样本权重错误？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X08",
+    "title": "训练 OOM 从哪些方向处理？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "X09",
+    "title": "异步 rollout 与策略滞后怎么解释？",
+    "priority": "P1",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S66"
+    ]
+  },
+  {
+    "id": "X10",
+    "title": "Checkpoint 保存与恢复要验证什么？",
+    "priority": "P0",
+    "doc": "dfd0e3790b3",
+    "path": "01_知识主线/13_分布式训练与量化.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "V01",
+    "title": "CLIP 学到了什么？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S40"
+    ]
+  },
+  {
+    "id": "V02",
+    "title": "VLM 通常怎样接上语言模型？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S41"
+    ]
+  },
+  {
+    "id": "V03",
+    "title": "视觉 grounding 是什么，怎么测？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S42"
+    ]
+  },
+  {
+    "id": "V04",
+    "title": "VLM 与 VLA 差别是什么？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S41",
+      "S46"
+    ]
+  },
+  {
+    "id": "V05",
+    "title": "扩散规划为什么适合多模态轨迹？",
+    "priority": "P1",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S45",
+      "S47"
+    ]
+  },
+  {
+    "id": "V06",
+    "title": "DiffusionDrive 的新意该怎么讲？",
+    "priority": "P1",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S45"
+    ]
+  },
+  {
+    "id": "V07",
+    "title": "世界模型为什么可能帮助规划？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S77"
+    ]
+  },
+  {
+    "id": "V08",
+    "title": "开环和闭环评测差别在哪里？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": true,
+    "beginner": false,
+    "sources": [
+      "S43",
+      "S44"
+    ]
+  },
+  {
+    "id": "V09",
+    "title": "NAVSIM 与 Bench2Drive 怎么比较？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S43",
+      "S44"
+    ]
+  },
+  {
+    "id": "V10",
+    "title": "DPO 如何迁移到驾驶轨迹？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S46"
+    ]
+  },
+  {
+    "id": "V11",
+    "title": "POMDP 与普通 MDP 有何区别？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S73"
+    ]
+  },
+  {
+    "id": "V12",
+    "title": "EM 在驾驶人因建模里做什么？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S74"
+    ]
+  },
+  {
+    "id": "V13",
+    "title": "程序化模仿学习有什么岗位价值？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "V14",
+    "title": "3DGS、合成数据与世界模型怎么连接？",
+    "priority": "P1",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S75"
+    ]
+  },
+  {
+    "id": "V15",
+    "title": "你最适合做怎样的驾驶与大模型交叉项目？",
+    "priority": "P0",
+    "doc": "de563d7d6eb",
+    "path": "01_知识主线/14_多模态与自动驾驶交叉.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S42"
+    ]
+  },
+  {
+    "id": "B01",
+    "title": "逻辑回归为什么叫回归却用于分类？",
+    "priority": "P0",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "B02",
+    "title": "LR 与 SVM 如何比较？",
+    "priority": "P1",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "B03",
+    "title": "TF-IDF + 字符 n-gram 为什么值得做？",
+    "priority": "P0",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S67"
+    ]
+  },
+  {
+    "id": "B04",
+    "title": "Word2Vec、静态向量与上下文表示区别？",
+    "priority": "P1",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S76"
+    ]
+  },
+  {
+    "id": "B05",
+    "title": "决策树、随机森林、GBDT 的区别？",
+    "priority": "P1",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "B06",
+    "title": "类别不平衡怎样处理？",
+    "priority": "P0",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "B07",
+    "title": "过拟合如何定位？",
+    "priority": "P0",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "B08",
+    "title": "如何公平比较传统模型与大模型？",
+    "priority": "P0",
+    "doc": "d409d8a1452",
+    "path": "01_知识主线/15_传统机器学习与NLP基线.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H01",
+    "title": "手写稳定 softmax 和交叉熵",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H02",
+    "title": "手写带 causal mask 的 attention",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H03",
+    "title": "从 logits 取回答序列 logprob",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H04",
+    "title": "手写 DPO/SimPO 并检查符号",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H05",
+    "title": "手写 GRPO 优势与 PPO clip",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H06",
+    "title": "手写 pass@k 与 paired bootstrap",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H07",
+    "title": "手写 LoRA 前向与合并",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "H08",
+    "title": "实现一次“写入成功但响应超时”的恢复",
+    "priority": "P0",
+    "doc": "d492bc62871",
+    "path": "01_知识主线/16_手撕与数值验证.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "KD01",
+    "title": "蒸馏究竟在蒸什么？和 SFT、量化有什么区别？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79",
+      "S80"
+    ]
+  },
+  {
+    "id": "KD02",
+    "title": "只能调用教师 API，还能蒸馏吗？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79",
+      "S80",
+      "S88"
+    ]
+  },
+  {
+    "id": "KD03",
+    "title": "软标签、温度和 T²，能用一个例子讲清吗？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79"
+    ]
+  },
+  {
+    "id": "KD04",
+    "title": "正向 KL、反向 KL，为什么蒸馏时老在讨论方向？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S81",
+      "S82"
+    ]
+  },
+  {
+    "id": "KD05",
+    "title": "序列蒸馏是不是“拿老师答案微调一下”？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S80"
+    ]
+  },
+  {
+    "id": "KD06",
+    "title": "推理蒸馏是在教学生“思考”，还是背长答案？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S84"
+    ]
+  },
+  {
+    "id": "KD07",
+    "title": "on-policy 蒸馏为什么要让学生自己先写？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S82",
+      "S83",
+      "S88"
+    ]
+  },
+  {
+    "id": "KD08",
+    "title": "DAgger 和普通“多收集一点数据”差在哪？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S82",
+      "S83"
+    ]
+  },
+  {
+    "id": "KD09",
+    "title": "MiniLLM 为什么用反向 KL？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S81"
+    ]
+  },
+  {
+    "id": "KD10",
+    "title": "GKD 怎样训练？TRL 里的参数怎么读？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S82",
+      "S88"
+    ]
+  },
+  {
+    "id": "KD11",
+    "title": "Agent 蒸馏要保存哪些数据？工具返回也要让模型背吗？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S85",
+      "S87"
+    ]
+  },
+  {
+    "id": "KD12",
+    "title": "AgentTuning 和 AgentInstruct，名字相近是同一个东西吗？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S85",
+      "S86"
+    ]
+  },
+  {
+    "id": "KD13",
+    "title": "检索、代码工具型 Agent 蒸馏，有什么具体研究可看？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S87"
+    ]
+  },
+  {
+    "id": "KD14",
+    "title": "SOD 为什么给不同工具步骤不同的蒸馏权重？",
+    "priority": "P2",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S89"
+    ]
+  },
+  {
+    "id": "KD15",
+    "title": "SEED 怎样把“事后复盘”变成训练信号？",
+    "priority": "P2",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S90"
+    ]
+  },
+  {
+    "id": "KD16",
+    "title": "不同词表、中间层、top-k 概率，怎样避免“对齐错了”？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79",
+      "S88"
+    ]
+  },
+  {
+    "id": "KD17",
+    "title": "教师生成了一万条轨迹，怎么判断哪些值得学？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S85"
+    ]
+  },
+  {
+    "id": "KD18",
+    "title": "更强老师、更多上下文，为什么学生反而学不好？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S82",
+      "S89"
+    ]
+  },
+  {
+    "id": "KD19",
+    "title": "多个教师一起教，会不会一定比一个教师好？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79"
+    ]
+  },
+  {
+    "id": "KD20",
+    "title": "蒸馏省不省钱，应该怎么算？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "KD21",
+    "title": "怎么证明蒸馏出的 Agent 真能工作？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S31",
+      "S87"
+    ]
+  },
+  {
+    "id": "KD22",
+    "title": "面试让你设计“把强模型蒸馏成订单 Agent”，怎么回答？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "KD23",
+    "title": "没有显卡，能先把蒸馏的数学和 mask 跑明白吗？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "KD24",
+    "title": "蒸馏算法这么多，面试时怎样选，不背名字？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S79",
+      "S90"
+    ]
+  },
+  {
+    "id": "KD25",
+    "title": "OPD 到底是什么算法？和 GKD、普通蒸馏是什么关系？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S81",
+      "S82",
+      "S91"
+    ]
+  },
+  {
+    "id": "KD26",
+    "title": "OPD 怎样把教师 logprob 变成每个 token 的指导？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S91",
+      "S92"
+    ]
+  },
+  {
+    "id": "KD27",
+    "title": "OPSD 怎么让同一个模型既当老师又当学生？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18"
+    ]
+  },
+  {
+    "id": "KD28",
+    "title": "OPSD 已经给老师参考答案了，不就是把答案泄漏给学生吗？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18"
+    ]
+  },
+  {
+    "id": "KD29",
+    "title": "MOPD 怎样把多个专业老师的能力合到一个模型里？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S92",
+      "S93"
+    ]
+  },
+  {
+    "id": "KD30",
+    "title": "MOPD 的难点是“多放几个老师”吗？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S92"
+    ]
+  },
+  {
+    "id": "KD31",
+    "title": "SDPO 和 OPSD，缩写差不多，实际区别在哪？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18",
+      "S94"
+    ]
+  },
+  {
+    "id": "KD32",
+    "title": "熵感知 OPD（EOPD）为什么在高熵位置增加正向 KL？",
+    "priority": "P1",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18",
+      "S19"
+    ]
+  },
+  {
+    "id": "KD33",
+    "title": "2026 年的 U-OPSD 没有标准答案，靠什么教自己？",
+    "priority": "P2",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S95"
+    ]
+  },
+  {
+    "id": "KD34",
+    "title": "OPD、OPSD、MOPD、SDPO，怎样放到同一张图里理解？",
+    "priority": "P0",
+    "doc": "d6b12c6552d",
+    "path": "01_知识主线/17_蒸馏算法与Agent能力迁移.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S18",
+      "S19",
+      "S91",
+      "S95"
+    ]
+  },
+  {
+    "id": "HP01",
+    "title": "DAPO 和 Dr. GRPO，到底改了 GRPO 哪些地方？",
+    "priority": "P0",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S14",
+      "S15"
+    ]
+  },
+  {
+    "id": "HP02",
+    "title": "GSPO 为什么把概率比放到整段回答上看？",
+    "priority": "P1",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S96"
+    ]
+  },
+  {
+    "id": "HP03",
+    "title": "SAPO 的“软门控”，比硬剪切多做了什么？",
+    "priority": "P1",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S97"
+    ]
+  },
+  {
+    "id": "HP04",
+    "title": "GDPO 为什么要把多个奖励先分别归一化？",
+    "priority": "P1",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S98"
+    ]
+  },
+  {
+    "id": "HP05",
+    "title": "VESPO 为什么关心“数据已经过时了”？",
+    "priority": "P2",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S99"
+    ]
+  },
+  {
+    "id": "HP06",
+    "title": "训练里几个“模型”，为什么不能都叫旧模型？",
+    "priority": "P0",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S91",
+      "S99"
+    ]
+  },
+  {
+    "id": "HP07",
+    "title": "更强的优化算法，能补救不靠谱的奖励吗？",
+    "priority": "P0",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S14",
+      "S94"
+    ]
+  },
+  {
+    "id": "HP08",
+    "title": "面对“最先进后训练算法”，面试如何给出有判断的回答？",
+    "priority": "P0",
+    "doc": "d6403496de7",
+    "path": "01_知识主线/18_后训练算法进阶与2026研究地图.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "PT01",
+    "title": "预训练没有人逐题标答案，模型到底在学什么？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT02",
+    "title": "一次预测训练里，输入、标签和因果 mask 怎么对应？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S48"
+    ]
+  },
+  {
+    "id": "PT03",
+    "title": "下一词预测、掩码预测、FIM，训练目标有什么不同？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S59",
+      "S103"
+    ]
+  },
+  {
+    "id": "PT04",
+    "title": "Tokenizer 是预处理小细节，还是会影响模型能力？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S58"
+    ]
+  },
+  {
+    "id": "PT05",
+    "title": "预训练数据流水线应该怎样组织？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S101"
+    ]
+  },
+  {
+    "id": "PT06",
+    "title": "文档怎样变成训练序列？EOS 能阻断跨文档信息吗？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT07",
+    "title": "预训练数据配比怎么决定？DoReMi 在解决什么？",
+    "priority": "P1",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S102"
+    ]
+  },
+  {
+    "id": "PT08",
+    "title": "参数量、数据量、算力，怎样一起算预算？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S05",
+      "S48"
+    ]
+  },
+  {
+    "id": "PT09",
+    "title": "预训练选择 dense 还是 MoE，主要权衡什么？",
+    "priority": "P1",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S60"
+    ]
+  },
+  {
+    "id": "PT10",
+    "title": "AdamW、学习率预热和衰减，各负责什么？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S55",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT11",
+    "title": "全局 batch、梯度累积、训练步数，怎么换算？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S35",
+      "S48"
+    ]
+  },
+  {
+    "id": "PT12",
+    "title": "BF16、FP16、FP8，精度降低会怎样影响训练？",
+    "priority": "P1",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48"
+    ]
+  },
+  {
+    "id": "PT13",
+    "title": "预训练 loss 突然尖峰，应该怎么排查？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT14",
+    "title": "长上下文能力，是把最大长度参数改大就有了吗？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT15",
+    "title": "MTP 多 token 预测，和普通下一 token 预测怎么衔接？",
+    "priority": "P1",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S93"
+    ]
+  },
+  {
+    "id": "PT16",
+    "title": "继续预训练、mid-training 和 SFT，怎么区分？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S100"
+    ]
+  },
+  {
+    "id": "PT17",
+    "title": "预训练模型怎么评测？loss 低就代表更好吗？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S05",
+      "S100",
+      "S101"
+    ]
+  },
+  {
+    "id": "PT18",
+    "title": "新人怎样做一个能证明理解预训练的小实验？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "PT19",
+    "title": "想看完整开放训练流程，Olmo 3 能帮助理解什么？",
+    "priority": "P1",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S100"
+    ]
+  },
+  {
+    "id": "PT20",
+    "title": "预训练、后训练、蒸馏，怎样串成一次完整面试回答？",
+    "priority": "P0",
+    "doc": "db4bdbdc3f9",
+    "path": "01_知识主线/19_大模型预训练从目标到工程.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S48",
+      "S92",
+      "S100"
+    ]
+  },
+  {
+    "id": "AG01",
+    "title": "一个 Agent 系统，除了大模型还需要什么？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S104",
+      "S111"
+    ]
+  },
+  {
+    "id": "AG02",
+    "title": "怎样判断一个功能该用工作流、单 Agent，还是多 Agent？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S104",
+      "S110"
+    ]
+  },
+  {
+    "id": "AG03",
+    "title": "Function Calling 到底是谁在调用函数？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S105",
+      "S111"
+    ]
+  },
+  {
+    "id": "AG04",
+    "title": "怎样设计一个模型不容易误用的工具？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S105"
+    ]
+  },
+  {
+    "id": "AG05",
+    "title": "MCP 和 Function Calling 有什么区别？2026 版要注意什么？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S107"
+    ]
+  },
+  {
+    "id": "AG06",
+    "title": "A2A 和 MCP 是同一回事吗？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S108"
+    ]
+  },
+  {
+    "id": "AG07",
+    "title": "程序化工具调用为什么可能更省？是不是以后都该写代码调用？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S106",
+      "S109"
+    ]
+  },
+  {
+    "id": "AG08",
+    "title": "Agent 的规划、反思和搜索，分别在干什么？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S30",
+      "S104"
+    ]
+  },
+  {
+    "id": "AG09",
+    "title": "API Agent 和浏览器/电脑 Agent，难点差在哪里？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S111"
+    ]
+  },
+  {
+    "id": "AG10",
+    "title": "哪些工具可以并行？多 Agent 怎样避免互相踩脚？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S110"
+    ]
+  },
+  {
+    "id": "AG11",
+    "title": "怎样让网页内容、工具权限和用户目标各守边界？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S32",
+      "S107"
+    ]
+  },
+  {
+    "id": "AG12",
+    "title": "Agent 什么时候该继续尝试，什么时候该停？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S104",
+      "S108",
+      "S111"
+    ]
+  },
+  {
+    "id": "AG13",
+    "title": "上下文工程到底在“工程”什么？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S112"
+    ]
+  },
+  {
+    "id": "AG14",
+    "title": "工具有几百个，怎样让 Agent 找到该用的那个？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S106"
+    ]
+  },
+  {
+    "id": "AG15",
+    "title": "压缩、清理旧结果、外部状态，怎样搭配？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S112",
+      "S113"
+    ]
+  },
+  {
+    "id": "AG16",
+    "title": "用户说过的话，哪些值得写进长期记忆？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S119"
+    ]
+  },
+  {
+    "id": "AG17",
+    "title": "明明存了记忆，为什么还是答错？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S116"
+    ]
+  },
+  {
+    "id": "AG18",
+    "title": "Agent 工作几个小时，怎样让下一轮接得住？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S113"
+    ]
+  },
+  {
+    "id": "AG19",
+    "title": "Skills 为什么比一大段万能提示词实用？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S114"
+    ]
+  },
+  {
+    "id": "AG20",
+    "title": "给子 Agent 什么信息，才能分工有效？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S115"
+    ]
+  },
+  {
+    "id": "AG21",
+    "title": "多个 Agent 同时写东西，怎样避免互相覆盖？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S115"
+    ]
+  },
+  {
+    "id": "AG22",
+    "title": "MemSkill 怎样让 Agent 学会“怎么记”？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S117"
+    ]
+  },
+  {
+    "id": "AG23",
+    "title": "TMEM 的“参数记忆”与普通记忆有何区别？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S118"
+    ]
+  },
+  {
+    "id": "AG24",
+    "title": "MindMemOS 的自进化，究竟在更新什么？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S119"
+    ]
+  },
+  {
+    "id": "AG25",
+    "title": "Agent 的 SFT 数据，是把聊天记录全部背下来吗？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S120",
+      "S122"
+    ]
+  },
+  {
+    "id": "AG26",
+    "title": "Agent RL 为什么比“答对一道数学题”难？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S120"
+    ]
+  },
+  {
+    "id": "AG27",
+    "title": "同组都失败、相对奖励没差异时，怎样找到学习信号？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S121"
+    ]
+  },
+  {
+    "id": "AG28",
+    "title": "Agent 岗位怎样选择 SFT、OPD、SDPO 和 SEED？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S89",
+      "S90",
+      "S94"
+    ]
+  },
+  {
+    "id": "AG29",
+    "title": "怎样批量造 Agent 训练题，还保证题目真的可做？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S122",
+      "S127"
+    ]
+  },
+  {
+    "id": "AG30",
+    "title": "τ²、Terminal-Bench、SWE 类榜单分别在考什么？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S123",
+      "S124",
+      "S126",
+      "S127"
+    ]
+  },
+  {
+    "id": "AG31",
+    "title": "失败了，怎样从 trace 找到真正该改的地方？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S125"
+    ]
+  },
+  {
+    "id": "AG32",
+    "title": "成功率涨了 2 个点，就能说新方案更好吗？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S31",
+      "S125"
+    ]
+  },
+  {
+    "id": "AG33",
+    "title": "模型没改，Agent 为什么突然退步了？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S124",
+      "S126"
+    ]
+  },
+  {
+    "id": "AG34",
+    "title": "怎样把 Agent 项目做成有说服力的岗位作品？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S125"
+    ]
+  },
+  {
+    "id": "AG35",
+    "title": "面试时，怎样用一分钟说清自己的 Agent 方案？",
+    "priority": "P0",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S120",
+      "S125"
+    ]
+  },
+  {
+    "id": "AG36",
+    "title": "2026 年 Agent 前沿，该沿着哪条路线读？",
+    "priority": "P1",
+    "doc": "d611a9a97fc",
+    "path": "01_知识主线/20_Agent从入门到实战.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S89",
+      "S90",
+      "S94",
+      "S120",
+      "S122",
+      "S124",
+      "S126",
+      "S127"
+    ]
+  },
+  {
+    "id": "TH01",
+    "title": "这章从哪里写起，最后要能写出什么？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S132",
+      "S134",
+      "S135"
+    ]
+  },
+  {
+    "id": "TH02",
+    "title": "B、T、D、H、Dh：怎样先把形状写对？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S129"
+    ]
+  },
+  {
+    "id": "TH03",
+    "title": "Embedding 和 Q/K/V 投影到底怎样写？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "TH04",
+    "title": "单头注意力：五行核心计算怎样理解？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S128"
+    ]
+  },
+  {
+    "id": "TH05",
+    "title": "因果 mask 与 padding mask 怎样组合？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S128",
+      "S129"
+    ]
+  },
+  {
+    "id": "TH06",
+    "title": "多头注意力：怎样把前面几块拼在一起？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S129"
+    ]
+  },
+  {
+    "id": "TH07",
+    "title": "LayerNorm 和 RMSNorm：为什么只沿最后一维算？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S56",
+      "S131"
+    ]
+  },
+  {
+    "id": "TH08",
+    "title": "FFN 与 SwiGLU：为什么“放大再缩小”不是白忙？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S57"
+    ]
+  },
+  {
+    "id": "TH09",
+    "title": "位置编码：怎样让模型区分“我爱你”和“你爱我”？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "TH10",
+    "title": "Transformer Block：残差和归一化放在哪里？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S134"
+    ]
+  },
+  {
+    "id": "TH11",
+    "title": "Encoder、Decoder-only 和 Encoder–Decoder 怎样分清？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "TH12",
+    "title": "手写翻译式 Decoder：为什么需要第二种注意力？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "TH13",
+    "title": "完整小语言模型：怎样串起 Embedding、层堆叠和词表预测？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S134"
+    ]
+  },
+  {
+    "id": "TH14",
+    "title": "完整 Encoder–Decoder：怎样把两种模块连接起来？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S130"
+    ]
+  },
+  {
+    "id": "TH15",
+    "title": "从 logits 到 loss：下一 token 标签怎样右移？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S130"
+    ]
+  },
+  {
+    "id": "TH16",
+    "title": "真的更新一次参数：训练循环哪几行不能少？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S130",
+      "S134"
+    ]
+  },
+  {
+    "id": "TH17",
+    "title": "生成与 KV Cache：为什么只喂新 token 还能得到同样答案？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S01",
+      "S128"
+    ]
+  },
+  {
+    "id": "TH18",
+    "title": "RoPE 手写：旋转到底发生在哪个张量上？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S02"
+    ]
+  },
+  {
+    "id": "TH19",
+    "title": "GQA/MQA 手写：K/V 头怎样分给 Q 头？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": "TH20",
+    "title": "怎样证明自己手写正确，而不是碰巧能运行？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S128",
+      "S129"
+    ]
+  },
+  {
+    "id": "TH21",
+    "title": "面试 30 分钟：怎样安排手写与讲解？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S129",
+      "S135"
+    ]
+  },
+  {
+    "id": "TH22",
+    "title": "怎样把可视化、代码练习与 Agent 实战连起来？",
+    "priority": "P0",
+    "doc": "d69723ddacb",
+    "path": "01_知识主线/21_Transformer架构手写教学.md",
+    "core": false,
+    "beginner": false,
+    "sources": [
+      "S132",
+      "S133",
+      "S134",
+      "S135"
+    ]
+  },
+  {
+    "id": "J01",
+    "title": "用两分钟介绍内容安全项目",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J02",
+    "title": "2 万数据怎么来的，怎么保证质量？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J03",
+    "title": "如何拆解 79%→96% 的贡献？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J04",
+    "title": "讲一个真正有价值的失败案例",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J05",
+    "title": "怎么把三知识库 RAG 讲得有算法含量？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J06",
+    "title": "LangGraph 到底带来了什么？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J07",
+    "title": "如何讲模型评测与平台经历？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J08",
+    "title": "驾驶人因研究如何与大模型岗位衔接？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J09",
+    "title": "没做过 GRPO，面试如何回答？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "J10",
+    "title": "技术简历的一条 bullet 如何写扎实？",
+    "priority": "P0",
+    "doc": "d66c1228e2c",
+    "path": "02_项目与面试/01_项目深挖与证据.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C01",
+    "title": "设计一个中文内容安全系统",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C02",
+    "title": "设计一个航空三知识库问答系统",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C03",
+    "title": "设计一个可以处理退改签的 Agent",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C04",
+    "title": "设计 DPO/KTO/SimPO 对照实验",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C05",
+    "title": "设计一个低预算 RLVR 复现",
+    "priority": "P1",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C06",
+    "title": "设计模型评测与版本回归平台",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C07",
+    "title": "设计一个满足延迟预算的推理服务",
+    "priority": "P1",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  },
+  {
+    "id": "C08",
+    "title": "设计驾驶 VLM 可靠性评测",
+    "priority": "P0",
+    "doc": "d9e5a3c1dc3",
+    "path": "02_项目与面试/02_系统设计八问.md",
+    "core": false,
+    "beginner": false,
+    "sources": []
+  }
+]

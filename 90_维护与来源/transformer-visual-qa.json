@@ -1,0 +1,240 @@
+{
+  "version": "1.5",
+  "visuals": [
+    {
+      "type": "projection",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "attention",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "heads",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "block",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "rope",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "cache",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "probability",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "lora",
+      "width": 1440,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "projection",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "attention",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "heads",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "block",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "rope",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "cache",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "probability",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "lora",
+      "width": 768,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "projection",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "attention",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "heads",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "block",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "rope",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "cache",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "probability",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "lora",
+      "width": 390,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "projection",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "attention",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "heads",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "block",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "rope",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "cache",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "probability",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    },
+    {
+      "type": "lora",
+      "width": 320,
+      "checks": "controls, selection, finite output, overflow"
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "widths": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "performance": {
+    "before": {
+      "reader_bytes": 1406671,
+      "load_ms": 542.5,
+      "routes": {
+        "all": {
+          "sync_ms": 40.09999999962747,
+          "paint_ms": 158.39999999850988,
+          "body_nodes": 0,
+          "nodes": 1602
+        },
+        "agent": {
+          "sync_ms": 94.09999999962747,
+          "paint_ms": 134.59999999962747,
+          "body_nodes": 0,
+          "nodes": 316
+        },
+        "core": {
+          "sync_ms": 13.5,
+          "paint_ms": 57.09999999962747,
+          "body_nodes": 0,
+          "nodes": 247
+        },
+        "search": {
+          "sync_ms": 40.79999999888241,
+          "paint_ms": 74.09999999962747,
+          "body_nodes": 0,
+          "nodes": 1167
+        }
+      }
+    },
+    "after": {
+      "reader_bytes": 1580124,
+      "load_ms": 553.3000000007451,
+      "routes": {
+        "all": {
+          "sync_ms": 40.29999999888241,
+          "paint_ms": 152.09999999962747,
+          "body_nodes": 0,
+          "nodes": 1712
+        },
+        "agent": {
+          "sync_ms": 88.30000000074506,
+          "paint_ms": 130.7000000011176,
+          "body_nodes": 0,
+          "nodes": 316
+        },
+        "core": {
+          "sync_ms": 13.899999998509884,
+          "paint_ms": 56.09999999962747,
+          "body_nodes": 0,
+          "nodes": 247
+        },
+        "search": {
+          "sync_ms": 45.09999999962747,
+          "paint_ms": 76.69999999925494,
+          "body_nodes": 0,
+          "nodes": 1232
+        }
+      },
+      "max_interaction_ms": 9.200000001117587
+    },
+    "method": "Headless Edge; 4× CPU slowdown; fresh browser context; median of 5 runs for routes; worst of 5×8×10 interaction samples. Not disk cold-cache or physical mobile hardware."
+  },
+  "download_matches_source": true,
+  "lazy_and_keyboard": true,
+  "numerical_interactions": true
+}
