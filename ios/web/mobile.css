@@ -1,0 +1,54 @@
+/* App-only layout. The desktop reader remains unchanged. */
+:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:12px}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;-webkit-tap-highlight-color:transparent}
+.shell{display:block;max-width:900px;min-height:100dvh}
+aside{position:relative;height:auto;max-height:none;padding:10px 16px;background:var(--paper);border:0;border-bottom:1px solid var(--line)}
+aside .brand,aside .tagline{display:none}
+#mobileNavToggle{width:100%;display:flex;align-items:center;justify-content:space-between;min-height:44px;border:0;background:transparent;color:var(--green);font-size:16px;font-weight:650;padding:4px 0;text-align:left}
+#mobileNavToggle:after{content:"＋";font-size:23px;font-weight:400}
+#mobileNavToggle[aria-expanded=true]:after{content:"−"}
+#nav{display:none;max-height:55dvh;overflow:auto;padding:8px 0 12px;overscroll-behavior:contain}
+#nav.mobile-open{display:block}
+#nav button{display:block;width:100%;font-size:15px;min-height:44px;padding:9px 10px}
+#nav .navlabel{margin:16px 10px 4px;font-size:12px}
+main{padding:14px 16px 40px}
+.topline{font-size:12px;gap:8px;margin-bottom:10px;align-items:flex-start}
+.edition{letter-spacing:0;max-width:60%}
+#progressText{white-space:nowrap}
+.toolbar{padding:12px;margin:12px 0 20px;border-radius:14px;background:var(--white)}
+.searchline{gap:6px}
+.searchline input{font-size:16px;padding:9px;min-height:44px}
+.btn{min-height:44px;font-size:14px;padding:8px 12px}
+.searchline .btn{padding:6px 9px}
+#mobileQuickNav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:10px}
+#mobileQuickNav .btn{font-size:12px;padding:6px 2px;min-width:0;background:var(--soft);border-color:transparent;color:var(--green)}
+#mobileOptions{margin-top:8px;border-top:1px solid var(--line)}
+#mobileOptions>summary{min-height:44px;font-size:14px;color:var(--muted);padding:10px 0;cursor:pointer}
+#mobileOptions .filters{margin:0 0 6px;gap:8px}
+.filters select{font-size:16px;min-height:44px;max-width:100%;padding:7px}
+#notice:empty{display:none}
+#notice{margin:6px 0 0;min-height:0}
+.hero{padding:3px 0 18px;margin-bottom:20px}
+h1{font-family:inherit;font-size:28px;line-height:1.45;letter-spacing:0}
+.lede{font-size:16px;line-height:1.85}
+.stats{gap:20px;margin:20px 0}
+.stat strong{font-family:inherit;font-size:27px}
+.article{padding:16px;border-radius:12px;margin-bottom:14px;overflow-wrap:anywhere}
+.question{border-radius:12px}
+.question summary{padding:14px 12px;min-height:52px;gap:7px}
+.qtitle{font-size:16px}
+.qbody{padding:4px 15px 15px;overflow-wrap:anywhere}
+.qbody>p{font-size:16px}
+.qfooter{padding:12px;flex-wrap:wrap}
+.study{font-size:16px;min-height:44px;max-width:100%}
+.sectionhead{flex-wrap:wrap;align-items:flex-start;gap:10px}
+.sectionhead h2{font-size:22px}
+.tracks{grid-template-columns:1fr}
+.viz-controls select{font-size:16px;min-height:44px}
+.viz-controls input[type=range]{min-height:36px}
+.agent-walk select{font-size:16px;min-height:44px;max-width:100%}
+.agent-walk-controls{max-width:100%}
+.formula,pre,.viz-table-wrap{overscroll-behavior-x:contain}
+@media(orientation:landscape){main{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

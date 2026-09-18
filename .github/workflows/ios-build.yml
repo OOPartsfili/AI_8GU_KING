@@ -1,0 +1,78 @@
+name: Build offline iPhone app
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ios/**'
+      - '开始阅读.html'
+      - '.github/workflows/ios-build.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare bundled offline data and Xcode project
+        run: |
+          python3 ios/tools/prepare_assets.py
+          python3 ios/tools/generate_project.py
+          python3 -m unittest discover -s ios/tests -p 'test_*.py' -v
+          xcodebuild -version
+          plutil -lint ios/AI8GUKing.xcodeproj/project.pbxproj
+      - name: Build physical iPhone application
+        run: |
+          set -o pipefail
+          mkdir -p build/logs
+          xcodebuild -project ios/AI8GUKing.xcodeproj -scheme AI8GUKing \
+            -configuration Release -destination 'generic/platform=iOS' \
+            -derivedDataPath build/device CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            build | tee build/logs/device-build.log
+          python3 ios/tools/package_ipa.py --app build/device/Build/Products/Release-iphoneos/AI8GUKing.app --output build/package
+      - name: Verify app in iPhone 16 simulator
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/AI8GUKing.xcodeproj -scheme AI8GUKing \
+            -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
+            -derivedDataPath build/simulator -resultBundlePath build/iPhone16-tests.xcresult \
+            -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO \
+            test | tee build/logs/simulator-tests.log
+      - name: Collect screenshots and installation instructions
+        if: always()
+        run: |
+          mkdir -p build/evidence
+          if [ -d build/iPhone16-tests.xcresult ]; then
+            xcrun xcresulttool export attachments --path build/iPhone16-tests.xcresult --output-path build/evidence || true
+          fi
+          if [ -d build/package ]; then
+            cp ios/安装到iPhone.md build/package/
+          fi
+      - name: Upload verified iPhone package
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AI8GUKing-iPhone-unsigned
+          path: build/package/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload build and simulator evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AI8GUKing-build-evidence
+          path: |
+            build/logs/
+            build/evidence/
+            build/iPhone16-tests.xcresult/
+          retention-days: 14

@@ -29,3 +29,14 @@ qa-progress.json
 /.agents/
 /.vscode/
 /.idea/
+
+# iOS build products and signing material remain local
+/build/
+/ios/build/
+/ios/DerivedData/
+*.xcuserstate
+xcuserdata/
+*.ipa
+*.p12
+*.mobileprovision
+*.provisionprofile
