@@ -39,7 +39,8 @@ final class AI8GUKingUITests: XCTestCase {
         Thread.sleep(forTimeInterval: 1)
         app.webViews.firstMatch.swipeUp()
         XCTAssertTrue(app.buttons["更多"].exists)
-        let landscape = XCTAttachment(screenshot: app.screenshot())
+        // The screen capture avoids app-element cropping against the rotated backing buffer.
+        let landscape = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         landscape.name = "iPhone16-landscape"
         landscape.lifetime = .keepAlways
         add(landscape)
